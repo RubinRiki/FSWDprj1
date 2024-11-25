@@ -3,22 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>מלגות לסטודנטים</title>
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
     <header>
-        <div>
-            <a href="#">ראשי</a>
-            <a href="about.html" >מי אנחנו?</a>
-            <a href="jobs.html">משרות</a>
+        <div> 
+            <a href="index.html">דף הבית</a>
+            <a href="about.html">אודות</a>
             <a href="scholarships.html">מלגות</a>
-            <a href="rights.html">זכויות</a>
-            <a href="contact.html">צור קשר</a>
         </div>
     </header>
-    <footer>
 
-    </footer> 
+    <!-- תוכן ראשי -->
+    <main id="scholarships-page">
+        <h1>מלגות לסטודנטים</h1>
+        
+        <!-- רשימת קטגוריות -->
+        <ul class="categories">
+            <li><a href="#excellence">מלגות הצטיינות</a></li>
+            <li><a href="#assistance">מלגות סיוע כלכלי</a></li>
+            <li><a href="#community">מלגות מעורבות חברתית</a></li>
+        </ul>
+
+        <!-- קטגוריית מלגות הצטיינות -->
+        <section id="excellence">
+            <h2>מלגות הצטיינות</h2>
+            <div class="scholarships-grid">
+                <div class="scholarship-card">
+                    <img src="excellence_logo1.png" alt="לוגו מלגה 1">
+                    <p>מלגת הצטיינות לסטודנטים מצטיינים באוניברסיטאות.</p>
+                    <a href="https://example.com" target="_blank">לאתר המלגה</a>
+                </div>
+                <div class="scholarship-card">
+                    <img src="excellence_logo2.png" alt="לוגו מלגה 2">
+                    <p>מלגת דיקן למצטיינים בתחומי מדעים מדויקים.</p>
+                    <a href="https://example.com" target="_blank">לאתר המלגה</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- קטגוריית מלגות סיוע כלכלי -->
+        <section id="assistance">
+            <h2>מלגות סיוע כלכלי</h2>
+            <div class="scholarships-grid">
+                <div class="scholarship-card">
+                    <img src="assistance_logo1.png" alt="לוגו מלגה 1">
+                    <p>מלגת סיוע כלכלי לסטודנטים בעלי קושי כלכלי.</p>
+                    <a href="https://example.com" target="_blank">לאתר המלגה</a>
+                </div>
+                <div class="scholarship-card">
+                    <img src="assistance_logo2.png" alt="לוגו מלגה 2">
+                    <p>מלגת קרן רווחה לעזרה במימון שכר לימוד.</p>
+                    <a href="https://example.com" target="_blank">לאתר המלגה</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- קטגוריית מלגות מעורבות חברתית -->
+        <section id="community">
+            <h2>מלגות מעורבות חברתית</h2>
+            <div class="scholarships-grid">
+                <div class="scholarship-card">
+                    <img src="community_logo1.png" alt="לוגו מלגה 1">
+                    <p>מלגת מעורבות חברתית למנהיגי קהילה.</p>
+                    <a href="https://example.com" target="_blank">לאתר המלגה</a>
+                </div>
+                <div class="scholarship-card">
+                    <img src="community_logo2.png" alt="לוגו מלגה 2">
+                    <p>מלגה על התנדבות ותרומה לחברה.</p>
+                    <a href="https://example.com" target="_blank">לאתר המלגה</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ציטוטים -->
+        <blockquote>
+            "המלגה עזרה לי מאוד במהלך התואר ושיפרה את חיי הסטודנטיאליים!" - דנה, סטודנטית.
+        </blockquote>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ברשתות</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com/studentforstudent"><img src="media/images/facebook_5968764.png" alt="Facebook"></a>
+                    <a href="#"><img src="media/images/linkedin_3536505.png" alt="Twitter"></a>
+                    <a href="#"><img src="media/images/linkedin_3536505.png" alt="LinkedIn"></a>
+                    <a href="https://instagram.com/studentforstudent"><img src="media/images/instagram_2111463.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>קישורים חשובים</h3>
+                <div class="social-icons">
+                <ul>
+                    <li><a href="about.html">מי אנחנו?</a></li>
+                    <li><a href="scholarships.html">מלגות</a></li>
+                    <li><a href="rights.html">זכויות</a></li>
+                    <li><a href="jobs.html">משרות</a></li>
+                    <li><a href="contact.html">צור קשר</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-section">
+                <h3>עדכונים</h3>
+                <span>הרשם לקבלת עדכונים במייל</span>
+                <div>
+                <form action="#">
+                    <input type="email" placeholder="אימייל">
+                    <button type="submit">שליחה</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </footer>
 </html>
