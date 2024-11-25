@@ -29,6 +29,103 @@ header div a:not(:last-child)::after {
     color: #FB6F60;
 }
 
+#hero {
+    background-image: url('media/images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    background-color: #FB6F60;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#hero .btn:hover {
+    background-color: #FF7A70;
+}
+
+/* תקצירים */
+.feature-section {
+    padding: 50px 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.feature img {
+    max-width: 45%;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.feature-left {
+    flex-direction: row;
+}
+
+.feature-right {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    max-width: 50%;
+}
+
+.feature-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #07288a;
+}
+
+.feature-text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.feature-text .btn {
+    display: inline-block;
+    background-color: #07288a;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.feature-text .btn:hover {
+    background-color: #FB6F60;
+}
+
+
 /* עיצוב עמוד אודות */
 #about-page main {
     padding: 20px;
