@@ -289,16 +289,23 @@ footer {
 
 .social-icons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr; /* 2 עמודות שוות בגודל */
+    column-gap: 5px; /* מרחק קטן בין העמודות */
+    row-gap: 10px; /* מרחק קטן בין השורות */
+    justify-items: center; /* מיקום התמונות במרכז */
     align-items: center;
+    width: 150px; /* מגדיר רוחב כולל עבור כל ה-grid */
+    margin: 0 auto; /* ממרכז את הקבוצה */
 }
 
 .social-icons a img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    padding: 5px;
+    width: 50px; 
+    height: 50px;
+    padding: 5px; /* רווח פנימי */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל לתמונות */
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); /* אפקט הגדלה בהצבעה */
 }
