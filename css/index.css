@@ -1,0 +1,76 @@
+/* אזור פתיחה */
+#hero {
+    background-color: #07288a;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    background-color: #FB6F60;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#hero .btn:hover {
+    background-color: #FF7A70;
+}
+
+/* תקצירים */
+.feature-section {
+    padding: 50px 20px;
+}
+
+.feature {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.feature:nth-child(odd) {
+    background-color: #ffffff; /* לבן */
+}
+
+.feature:nth-child(even) {
+    background-color: #f7f4f4; /* בז' */
+}
+
+.feature h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #07288a;
+}
+
+.feature p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.feature .btn {
+    display: inline-block;
+    background-color: #07288a;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.feature .btn:hover {
+    background-color: #FB6F60;
+}
