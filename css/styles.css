@@ -231,14 +231,6 @@ footer h3 {
     color: #FB6F60;   
 }
 
-#about-page .footer-section {
-    justify-content: center; /* למרכז אופקית */
-    align-items: center;   /* למרכז אנכית */
-    text-align: right;    /* ליישר טקסט במרכז */
-    height: 100%;          /* להבטיח גובה מלא */
-    padding-right: 20px;
-}
-
 
 .footer-container {
     display: flex;
