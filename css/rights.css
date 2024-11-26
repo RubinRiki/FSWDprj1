@@ -1,0 +1,88 @@
+/* עיצוב כללי */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    direction: rtl;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* כותרת עליונה */
+header {
+    background: #07288a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header div a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* כותרת העמוד */
+#page-title {
+    background: #FB6F60;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#page-title h1 {
+    font-size: 2.5em;
+}
+
+#page-title p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* קטגוריות זכויות */
+details {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background: #07288a;
+    color: white;
+    border-radius: 5px;
+}
+
+summary:hover {
+    background: #FB6F60;
+}
+
+details p {
+    padding: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+details a.btn {
+    display: inline-block;
+    background: #07288a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+details a.btn:hover {
+    background: #FB6F60;
+}
