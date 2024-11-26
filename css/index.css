@@ -1,107 +1,187 @@
-/* אזור פתיחה */
+
+/* עיצוב כללי לסקשן */
 #hero {
-    background-color: #07288a;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-#hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-#hero p {
-    font-size: 1.5em;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-#hero .btn {
-    background-color: #FB6F60;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-#hero .btn:hover {
-    background-color: #FF7A70;
-}
-/* כותרת ותיאור */
-#video h2 {
-    text-align: center;
-    color: #07288a;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.section-description {
-    text-align: center;
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-/* קונטיינר של הסרטון והטיפים */
-#video .video-text-container {
     display: flex;
-    align-items: flex-start; /* למקם את התוכן באופן אנכי */
-    gap: 20px;
-    background-color: #f7f4f4; /* רקע בז' */
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #ffffff; /* רקע כללי לעמוד */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* טקסט */
+.hero-content {
+    flex: 3; /* 60% מהשטח */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.text-container {
+    background-color: #07288a; /* רקע כחול */
     padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto; /* שוליים מהצדדים */
-    max-width: 50%; /* מתאים לרוחב המסך */
+    border-radius: 5px;
+    display: inline-block;
+
 }
 
-/* סרטון */
-#video video {
-    flex: 1.5;
-    max-width: 20%; /* סרטון ברוחב קטן יותר */
-    border-radius: 10px;
+.text-container h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0;
 }
 
-/* טיפים */
-.tips-container {
+.hero-content p {
+    font-size: 1.5em;
+    color: #333;
+    margin: 20px 0;
+}
+
+.hero-content .btn {
+    background-color: #FB6F60; /* כפתור בצבע וורוד */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    width: max-content;
+    transition: background 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #d95448;
+}
+
+/* תמונה */
+.hero-image {
+    flex: 2; /* 40% מהשטח */
+    max-width: 50%;
+    border-radius: 10px; /* קצוות מעוגלים לתמונה */
+}
+
+/* עיצוב כללי לסקשן */
+#tips-videos {
+    background-color: #FF7A7A; /* Gradient background *//* צבע רקע מותאם - ניתן לשנות */
+    padding: 50px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0; /* ללא שוליים */
+}
+
+/* עיצוב הכותרת */
+#tips-videos h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 30px;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+/* עיצוב מיכל הסרטונים */
+.videos-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    flex: 1;
-    max-width: 25%;
+    gap: 20px; /* רווח בין הסרטונים */
 }
 
-.tip {
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    min-width: 120px;
-    flex: 1 1 200px;
-    background-color: #FB6F60; /* צבע ורוד */
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 1.2em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    display: flex;
-    align-items: center; /* מרכז את התוכן אנכית */
-    justify-content: center; /* מרכז את התוכן אופקית */
+/* עיצוב כל סרטון */
+.video-card {
+    flex: 1 1 calc(25% - 20px); /* כל סרטון תופס 25% מהשורה, עם מרווח */
+    max-width: 300px; /* מקסימום רוחב לסרטון */
+    box-sizing: border-box;
 }
 
-.tip:hover {
-    transform: scale(1.05); /* אפקט הגדלה */
+.video-card video {
+    width: 100%; /* סרטון יתאים לגודל הכרטיס */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* הצללה קלה */
 }
 
-.tip p {
+/* סקשן כללי */
+#summaries {
     margin: 0;
-    font-weight: bold;
-    line-height: 1.5;
+    padding: 0;
+    background-color: #f9f9f9;
 }
 
+.summary-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* בלי רווחים בין התקצירים */
+}
+
+/* עיצוב כללי לתקציר */
+.summary {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 250px; /* גובה אחיד */
+    width: 100vw; /* מכסה את כל רוחב המסך */
+}
+
+.summary.reversed {
+    flex-direction: row-reverse; /* היפוך כיוון לתקציר */
+}
+
+/* עיצוב לטקסט */
+/* טקסט בתוך תקציר */
+.summary-text {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* מסדר את התוכן בעמודה */
+    align-items: center; /* מרכז את התוכן אופקית */
+    justify-content: center; /* מרכז את התוכן אנכית */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.summary-text h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px; /* מרווח קטן בין הכותרת לפסקה */
+}
+
+.summary-text p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0; /* מבטיח שלא יהיו שוליים מיותרים */
+}
+
+
+/* עיצוב לכפתור */
+.summary-button {
+    flex: 1;
+    background-color: #07288a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.summary-button .btn {
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.summary-button .btn:hover {
+    background: #fff;
+    color: #0056b3;
+}
 
 /* חוויות סטודנטים ומספרים */
 #testimonials-stats {
@@ -171,26 +251,25 @@
     margin-bottom: 5px;
 }
 
-/* חדשות ועדכונים */
 #news {
-    padding: 40px 20px;
-    background-color: #f7f4f4; /* רקע עדין */
-    text-align: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 50px auto;
-    max-width: 800px;
 }
 
 #news h2 {
-    color: #07288a;
+    text-align: center;
     font-size: 2.5em;
+    color: #07288a;
     margin-bottom: 30px;
 }
 
 .news-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -198,20 +277,19 @@
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 .news-item h3 {
-    font-size: 1.5em;
     color: #FB6F60;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .news-item p {
-    font-size: 1.2em;
     color: #555;
+    font-size: 1.2em;
     line-height: 1.6;
 }
 
@@ -222,67 +300,4 @@
 
 .news-item a:hover {
     color: #FB6F60;
-}
-
-.news-date {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #07288a;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9em;
-}
-
-
-
-/* עיצוב קלפים */
-#goals {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-#goals .mission-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-#goals .card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-#goals .card:hover {
-    transform: scale(1.05);
-}
-
-#goals .card h3 {
-    font-size: 1.5em;
-    color: #07288a;
-    margin-bottom: 10px;
-}
-
-#goals .card p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-#goals .card .btn {
-    background-color: #07288a;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-#goals .card .btn:hover {
-    background-color: #FB6F60;
 }
