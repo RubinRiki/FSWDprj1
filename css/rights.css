@@ -1,25 +1,24 @@
-
 /* כותרת העמוד */
 #page-title {
-    background: #FB6F60;
+    background: #ff9286;
     color: white;
     text-align: center;
     padding: 40px 20px;
 }
 
 #page-title h1 {
-    font-size: 2.5em;
+    font-size: 3em; /* גודל כותרת מוגדל */
 }
 
 #page-title p {
-    font-size: 1.2em;
-    line-height: 1.5;
+    font-size: 1.4em; /* מלל מוגדל יותר */
+    line-height: 1.8; /* ריווח שורות מוגדל */
 }
 
 /* קטגוריות זכויות */
 details {
-    margin-bottom: 20px;
-    padding: 10px;
+    margin: 50px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: white;
@@ -27,7 +26,7 @@ details {
 }
 
 summary {
-    font-size: 1.5em;
+    font-size: 1.8em; /* כותרת זכויות גדולה יותר */
     font-weight: bold;
     cursor: pointer;
     padding: 10px;
@@ -41,18 +40,19 @@ summary:hover {
 }
 
 details p {
-    padding: 10px 0;
-    font-size: 1.1em;
-    line-height: 1.6;
+    padding: 15px 0;
+    font-size: 1.3em; /* גודל מלל מוגדל */
+    line-height: 1.8; /* ריווח שורות גדול יותר */
 }
 
 details a.btn {
     display: inline-block;
     background: #07288a;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2em; /* כפתור גדול יותר */
 }
 
 details a.btn:hover {

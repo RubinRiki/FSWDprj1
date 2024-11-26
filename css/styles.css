@@ -68,10 +68,13 @@ footer h3 {
     list-style: none; /* Removes bullets from list items */
     padding: 0; /* Removes default padding */
     text-align: center; /* Centers the list items */
+    align-items: center;
 }
 
 .footer-section ul li {
     margin-bottom: 10px; /* Adds space between list items */
+    align-items: center;
+
 }
 
 
