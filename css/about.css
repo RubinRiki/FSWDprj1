@@ -1,92 +1,90 @@
-/* עיצוב עמוד אודות */
+/* Styling for the "About" page */
 #about-page main {
     padding: 20px;
 }
 
-
-#about-page #title{
-    font-family:Arial, Helvetica, sans-serif;
-    color: #07288a;
-    text-align: center;
-    font-size: 2em;
+/* Title section on the "About" page */
+#about-page #title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #07288a; /* Dark blue text color */
+    text-align: center; /* Center align text */
+    font-size: 2em; /* Large font size */
 }
 
-
+/* "About" section */
 #about-page #about {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Space below the section */
 }
 
 #about-page #about h2 {
-    font-size: 2em;
-    color: #07288a;
+    font-size: 2em; /* Large heading size */
+    color: #07288a; /* Dark blue heading color */
 }
 
 #about-page #about ul {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: #333;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    font-size: 1.2em; /* Larger text for list items */
+    line-height: 1.5; /* Increase spacing between lines */
+    color: #333; /* Dark gray text */
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
 }
 
-/* עיצוב מטרות */
+/* Goals section */
 #goals h2 {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
     padding: 15px;
-    background: linear-gradient(135deg, #FF7A7A, #FFB347);
-    color: white;
-    border-radius: 10px;
+    background: linear-gradient(135deg, #FF7A7A, #FFB347); /* Gradient background */
+    color: white; /* White text color */
+    border-radius: 10px; /* Rounded corners */
     margin-bottom: 20px;
 }
+
 .mission-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
     padding: 20px;
 }
 
 .card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 15px;
+    background: white; /* White background for cards */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 15px; /* Rounded corners */
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s; /* Smooth transition on hover */
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .card h3 {
-    font-size: 1.5em;
-    color: #FF7A7A;
+    font-size: 1.5em; /* Heading font size */
+    color: #FF7A7A; /* Light red heading color */
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 1em;
-    color: #555;
+    color: #555; /* Medium gray text color */
     line-height: 1.6;
 }
 
-
 #about-page #goals img {
-    max-width: 30%; /* הקטנת התמונה */
+    max-width: 30%; /* Resize image */
     height: auto;
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 20px auto; /* Center image with spacing */
     margin-top: 1%;
 }
 
-
-
-/* עיצוב צוות */
+/* Team section */
 #team {
     text-align: center;
     margin-top: 40px;
@@ -94,97 +92,95 @@
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 30px; /* Space between team members */
     justify-content: center;
 }
 
 .team-member {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
     overflow: hidden;
-    text-align: center;
+    text-align: center; /* Center text */
     padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
 }
 
 .team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Move upwards on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .team-member img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensure the image fits well */
     margin-bottom: 15px;
-    border: 3px solid #07288a;
+    border: 3px solid #07288a; /* Dark blue border */
 }
 
 .team-member h3 {
     font-size: 1.5em;
-    color: #07288a;
+    color: #07288a; /* Dark blue heading color */
     margin-bottom: 10px;
 }
 
 .team-member p {
     font-size: 1em;
-    color: #555;
+    color: #555; /* Medium gray text */
 }
 
-
-/* עיצוב טבלה */
+/* Table styling */
 #about-page table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%; /* Full-width table */
+    border-collapse: collapse; /* Remove space between cells */
     margin: 20px 0;
-    background-color: #07288a;
-    color: white;
+    background-color: #07288a; /* Dark blue background */
+    color: white; /* White text */
 }
 
 #about-page #Achievements h2 {
-    margin-top: 100px; 
+    margin-top: 100px; /* Add space above the achievements heading */
 }
 
 #about-page th, #about-page td {
-    padding: 10px;
-    border: 1px solid white;
+    padding: 10px; /* Padding inside table cells */
+    border: 1px solid white; /* White borders */
     text-align: center;
 }
 
 #about-page th {
-    background-color: #FB6F60;
-    color: white;
+    background-color: #FB6F60; /* Light red background for headers */
+    color: white; /* White text for headers */
 }
 
 #about-page td {
-    color: #FFCC33;
+    color: #FFCC33; /* Yellow text for data cells */
 }
 
-/* עיצוב סרטון */
+/* Video styling */
 #about-page #video {
-    text-align: center;
+    text-align: center; /* Center align the video */
     margin: 30px 0;
 }
 
 #about-page #video video {
-    max-width: 20%; /* הקטנת הרוחב */
-    height: 50%;
-    border-radius: 10px;
-    margin: 5px auto;
+    max-width: 20%; /* Resize the video width */
+    height: 50%; /* Resize the video height */
+    border-radius: 10px; /* Rounded corners */
+    margin: 5px auto; /* Center the video */
 }
-
 
 #about-page #video p {
     font-size: 1em;
-    color: #182e9deb;
+    color: #182e9deb; /* Light blue text */
     margin-top: 5px;
 }
 
 #about-page #more {
-    font-size:large;
+    font-size: large;
 }

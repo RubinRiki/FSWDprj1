@@ -1,128 +1,137 @@
-/* עיצוב כללי לכל האתר */
+/* General styling for the entire website */
 body {
-    direction: rtl; 
-    font-family: sans-serif;
+    direction: rtl; /* Sets text direction to right-to-left */
+    font-family: sans-serif; /* Applies a clean sans-serif font */
 }
 
+/* Header styling */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-color: #07288a;
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100px; /* Sets header height */
+    background-color: #07288a; /* Dark blue background */
 }
 
 header div {
-    text-align: center; 
-    font-size: 1.5em; 
-    color: white;
+    text-align: center; /* Centers the text */
+    font-size: 1.5em; /* Increases font size */
+    color: white; /* White text color */
 }
 
 header div a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets link text color to white */
 }
 
+/* Separator styling for navigation links */
 header div a:not(:last-child)::after {
-    content: "•"; 
-    margin: 20px; 
-    color: #FB6F60;
+    content: "•"; /* Adds a dot as a separator between links */
+    margin: 20px; /* Adds spacing around the separator */
+    color: #FB6F60; /* Sets separator color to red */
 }
 
-
-/* עיצוב פוטר */
+/* Footer styling */
 footer {
-    background-color: #07288a; /* רקע כהה */
-    color: white; /* צבע טקסט */
-    padding: 20px 0;
+    background-color: #07288a; /* Dark blue background */
+    color: white; /* White text color */
+    padding: 20px 0; /* Adds padding above and below the footer */
 }
 
 footer h3 {
-    color: #FB6F60;   
+    color: #FB6F60; /* Red color for footer headings */
 }
 
-
+/* Footer container layout */
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-around; /* Distributes sections evenly */
+    flex-wrap: wrap; /* Wraps sections if they don't fit in one row */
+    max-width: 1200px; /* Limits the maximum width */
+    margin: 0 auto; /* Centers the footer on the page */
 }
 
+/* Footer sections styling */
 .footer-section {
-    width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
+    width: 30%; /* Each section takes 30% of the width */
+    text-align: center; /* Centers text in each section */
+    margin-bottom: 20px; /* Adds space below sections */
 }
 
 .footer-section h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    color: #FB6F60; 
+    font-size: 1.5em; /* Larger font size for headings */
+    margin-bottom: 15px; /* Adds space below headings */
+    color: #FB6F60; /* Red color for headings */
 }
 
 .footer-section ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Removes bullets from list items */
+    padding: 0; /* Removes default padding */
+    text-align: center; /* Centers the list items */
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adds space between list items */
 }
+
 
 .footer-section ul li a, a {
-    color: white;
-    text-decoration: none;
+    color: white; /* White color for links */
+    text-decoration: none; /* Removes underline from links */
 }
 
-.footer-section ul li a:hover, a:hover{
-    color: #FB6F60;
+.footer-section ul li a:hover, a:hover {
+    color: #FB6F60; /* Changes link color to red on hover */
 }
 
+/* Styling for the email subscription form */
 .footer-section form input {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    display: block; /* Makes input a block element */
+    width: 80%; /* Sets input width to 80% of the container */
+    margin: 10px auto; /* Centers the input and adds space */
+    padding: 10px; /* Adds inner spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounds input corners */
 }
 
 .footer-section form button {
-    background-color: #FB6F60;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #FB6F60; /* Red background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Adds inner spacing */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounds button corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .footer-section form button:hover {
-    background-color: #FF7A70;
+    background-color: #FF7A70; /* Lighter red color on hover */
 }
 
+/* Social media icons grid layout */
 .social-icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 עמודות שוות בגודל */
-    column-gap: 5px; /* מרחק קטן בין העמודות */
-    row-gap: 10px; /* מרחק קטן בין השורות */
-    justify-items: center; /* מיקום התמונות במרכז */
-    align-items: center;
-    width: 150px; /* מגדיר רוחב כולל עבור כל ה-grid */
-    margin: 0 auto; /* ממרכז את הקבוצה */
+    display: grid; /* Enables grid layout */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    column-gap: 5px; /* Adds horizontal space between columns */
+    row-gap: 10px; /* Adds vertical space between rows */
+    justify-items: center; /* Centers icons horizontally */
+    align-items: center; /* Centers icons vertically */
+    width: 150px; /* Sets the total width of the grid */
+    margin: 0 auto; /* Centers the grid on the page */
 }
 
+.social-icons li a {
+    padding-right: 10px;
+}
+
+/* Styling for social media icons */
 .social-icons a img {
-    width: 50px; 
-    height: 50px;
-    padding: 5px; /* רווח פנימי */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל לתמונות */
-    transition: transform 0.3s;
+    width: 50px; /* Sets icon width */
+    height: 50px; /* Sets icon height */
+    padding: 5px; /* Adds inner spacing around icons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds shadow for a 3D effect */
+    transition: transform 0.3s; /* Smooth scaling animation */
 }
 
 .social-icons a img:hover {
-    transform: scale(1.1); /* אפקט הגדלה בהצבעה */
+    transform: scale(1.1); /* Enlarges icons slightly on hover */
 }
-
-
