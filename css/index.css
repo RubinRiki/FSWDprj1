@@ -1,19 +1,9 @@
-
+/* אזור פתיחה */
 #hero {
-    background-image: url('media/images/hero-background.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #07288a;
     color: white;
     text-align: center;
     padding: 100px 20px;
-}
-
-#hero .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
 }
 
 #hero h1 {
@@ -46,42 +36,32 @@
 }
 
 .feature {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.feature img {
-    max-width: 45%;
-    border-radius: 10px;
-    margin: 0 20px;
+.feature:nth-child(odd) {
+    background-color: #ffffff; /* לבן */
 }
 
-.feature-left {
-    flex-direction: row;
+.feature:nth-child(even) {
+    background-color: #f7f4f4; /* בז' */
 }
 
-.feature-right {
-    flex-direction: row-reverse;
-}
-
-.feature-text {
-    max-width: 50%;
-}
-
-.feature-text h2 {
+.feature h2 {
     font-size: 2.5em;
     margin-bottom: 15px;
     color: #07288a;
 }
 
-.feature-text p {
+.feature p {
     font-size: 1.2em;
     line-height: 1.8;
     margin-bottom: 20px;
+    color: #555;
 }
 
-.feature-text .btn {
+.feature .btn {
     display: inline-block;
     background-color: #07288a;
     color: white;
@@ -91,7 +71,6 @@
     border-radius: 5px;
 }
 
-.feature-text .btn:hover {
+.feature .btn:hover {
     background-color: #FB6F60;
 }
-
