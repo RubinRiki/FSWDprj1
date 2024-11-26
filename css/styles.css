@@ -198,29 +198,6 @@ header div a:not(:last-child)::after {
     color: #FFCC33;
 }
 
-/* עיצוב סרטון */
-#about-page #video {
-    text-align: center;
-    margin: 30px 0;
-}
-
-#about-page #video video {
-    max-width: 20%; /* הקטנת הרוחב */
-    height: 50%;
-    border-radius: 10px;
-    margin: 5px auto;
-}
-
-
-#about-page #video p {
-    font-size: 1em;
-    color: #182e9deb;
-    margin-top: 5px;
-}
-
-#about-page #more {
-    font-size:large;
-}
 
 /* עיצוב פוטר */
 footer {

@@ -29,48 +29,260 @@
 #hero .btn:hover {
     background-color: #FF7A70;
 }
-
-/* תקצירים */
-.feature-section {
-    padding: 50px 20px;
-}
-
-.feature {
+/* כותרת ותיאור */
+#video h2 {
     text-align: center;
-    padding: 40px 20px;
-}
-
-.feature:nth-child(odd) {
-    background-color: #ffffff; /* לבן */
-}
-
-.feature:nth-child(even) {
-    background-color: #f7f4f4; /* בז' */
-}
-
-.feature h2 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
     color: #07288a;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.feature p {
+.section-description {
+    text-align: center;
     font-size: 1.2em;
+    color: #555;
     line-height: 1.8;
     margin-bottom: 20px;
+}
+
+/* קונטיינר של הסרטון והטיפים */
+#video .video-text-container {
+    display: flex;
+    align-items: flex-start; /* למקם את התוכן באופן אנכי */
+    gap: 20px;
+    background-color: #f7f4f4; /* רקע בז' */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto; /* שוליים מהצדדים */
+    max-width: 50%; /* מתאים לרוחב המסך */
+}
+
+/* סרטון */
+#video video {
+    flex: 1.5;
+    max-width: 20%; /* סרטון ברוחב קטן יותר */
+    border-radius: 10px;
+}
+
+/* טיפים */
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+    max-width: 25%;
+}
+
+.tip {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 120px;
+    flex: 1 1 200px;
+    background-color: #FB6F60; /* צבע ורוד */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center; /* מרכז את התוכן אנכית */
+    justify-content: center; /* מרכז את התוכן אופקית */
+}
+
+.tip:hover {
+    transform: scale(1.05); /* אפקט הגדלה */
+}
+
+.tip p {
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+/* חוויות סטודנטים ומספרים */
+#testimonials-stats {
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.testimonial {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
     color: #555;
 }
 
-.feature .btn {
-    display: inline-block;
+.testimonial h4 {
+    margin-top: 10px;
+    color: #07288a;
+    font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+    max-width: 600px;
+}
+
+.stats div {
+    background: #07288a;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 120px;
+    flex: 1 1 200px;
+}
+
+.stats h3 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+/* חדשות ועדכונים */
+#news {
+    padding: 40px 20px;
+    background-color: #f7f4f4; /* רקע עדין */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+#news h2 {
+    color: #07288a;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.news-item h3 {
+    font-size: 1.5em;
+    color: #FB6F60;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.news-item a {
+    color: #07288a;
+    text-decoration: underline;
+}
+
+.news-item a:hover {
+    color: #FB6F60;
+}
+
+.news-date {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     background-color: #07288a;
     color: white;
-    padding: 15px 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+
+
+/* עיצוב קלפים */
+#goals {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#goals .mission-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#goals .card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#goals .card:hover {
+    transform: scale(1.05);
+}
+
+#goals .card h3 {
+    font-size: 1.5em;
+    color: #07288a;
+    margin-bottom: 10px;
+}
+
+#goals .card p {
     font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#goals .card .btn {
+    background-color: #07288a;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.feature .btn:hover {
+#goals .card .btn:hover {
     background-color: #FB6F60;
 }
