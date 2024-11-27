@@ -301,3 +301,123 @@
 .news-item a:hover {
     color: #FB6F60;
 }
+
+/* Media Queries for responsive design */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column; /* Stack hero section vertically */
+        align-items: center; /* Center content */
+    }
+
+    .hero-content, .hero-image {
+        max-width: 90%; /* Reduce width for smaller screens */
+    }
+
+    .videos-container {
+        flex-wrap: wrap;
+        gap: 10px; /* Smaller gap between videos */
+    }
+
+    .summary {
+        flex-direction: column; /* Stack summaries vertically */
+        height: auto; /* Adjust height for better fit */
+    }
+}
+
+/* Media Queries for Mobile (max-width: 480px) */
+
+/* סקשן hero - תמונה ליד טקסט במקום מתחת */
+@media (max-width: 480px) {
+    #hero {
+        flex-direction: row; /* לא Stack אלא לשים את התמונה לצד הטקסט */
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .hero-content {
+        width: 60%; /* כ-60% מהשטח שמוקדש לטקסט */
+        text-align: left;
+    }
+
+    .hero-image {
+        width: 35%; /* התמונה תהיה קטנה יותר ותוקטן ל-35% */
+        max-width: 150px;
+        height: auto;
+        margin-left: 20px; /* ריווח בין התמונה לטקסט */
+    }
+
+    .text-container {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-content .btn {
+        width: 90%;
+        font-size: 1em;
+        margin: 10px 0; /* ריווח בין הכפתור לטקסט */
+    }
+
+    /* עיצוב טקסט מלגות
+    #tips-videos h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .text-container h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    } */
+
+    /* תיקון למלגות, כפתורים וקישורים */
+    .text-container p {
+        font-size: 1em;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .text-container a {
+        color: #07288a;
+        text-decoration: underline;
+    }
+
+    .text-container a:hover {
+        color: #FB6F60;
+    }
+    
+    /* עיצוב התוכן של מי אנחנו/זכויות */
+    .summary-text {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .summary-text h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .summary-text p {
+        font-size: 1em;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .summary-button {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .summary-button .btn {
+        width: 80%;
+        font-size: 1.1em;
+        padding: 12px 20px;
+        margin-top: 10px;
+    }
+}
