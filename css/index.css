@@ -326,19 +326,25 @@
     }
 }
 
-/* Mobile phones (max-width: 480px) */
+/* התאמה כללית למובייל */
 @media (max-width: 480px) {
     #hero {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 20px;
-        height: auto;
+        height: auto; /* לאפשר התאמה לגובה התוכן */
     }
 
-    .hero-content, .hero-image {
-        width: 100%; /* תמלא את כל רוחב המסך */
-        max-width: none;
+    .hero-content {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 300px; /* מגבלת גודל תמונה */
+        height: auto;
     }
 
     .text-container {
@@ -347,32 +353,50 @@
         box-sizing: border-box;
     }
 
+    .hero-content h1 {
+        font-size: 1.8em; /* התאמה לגודל מסך קטן */
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
     .hero-content .btn {
-        width: 90%; /* התאמה רוחבית לכפתור */
+        width: 90%;
         font-size: 1em;
-        margin: 10px auto; /* ממרכז את הכפתורים */
+        margin: 10px auto;
     }
 
     .summary {
         flex-direction: column;
         height: auto;
+        padding: 10px;
     }
 
-    .summary-text, .summary-button {
+    .summary-text {
         width: 100%;
+        padding: 10px;
+    }
+
+    .summary-button {
+        width: 100%;
+        text-align: center;
     }
 
     .summary-button .btn {
-        width: 90%;
-        margin: 10px auto;
+        width: 80%;
+        font-size: 1em;
     }
 
     .videos-container {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .video-card {
         width: 100%;
+        max-width: 100%; /* להבטיח התאמה מלאה */
     }
 }
+
