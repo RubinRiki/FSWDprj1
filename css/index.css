@@ -326,83 +326,103 @@
     }
 }
 
-/* התאמה למובייל עם שינויים נוספים */
+/* Media Queries for Mobile (max-width: 480px) */
+
+/* סקשן hero - התאמה עבור מובייל */
 @media (max-width: 480px) {
     #hero {
-        flex-direction: column;
+        flex-direction: column; /* סידור סטייל סטאק, לא אופקי */
         justify-content: center;
         align-items: center;
         padding: 20px;
+        height: auto;
     }
 
     .hero-content {
         width: 100%;
         text-align: center;
-    }
-
-    .hero-image {
-        width: 80%; /* הקטנת גודל התמונה */
-        max-width: 250px;
-        height: auto;
-        margin: 10px 0;
-    }
-
-    /* עיצוב הטקסט ליד התמונה */
-    .summary {
-        flex-direction: row; /* שמירה על כיוון אופקי */
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
-    .summary-text, .summary-button {
-        width: 50%; /* טקסט ותמונה חולקים את המסך */
         padding: 10px;
     }
 
+    .hero-image {
+        width: 80%; /* התמונה תוקטן ויתפוס 80% מהמסך */
+        max-width: 250px;
+        height: auto;
+        margin-top: 20px; /* ריווח עם התוכן */
+    }
+
+    .text-container {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-content .btn {
+        width: 90%; /* כפתור ייקח 90% מהאורך */
+        font-size: 1em;
+        margin: 10px auto; /* ממרכז את הכפתור */
+    }
+
+    /* תיקון גודל הסרטונים */
+    .videos-container {
+        flex-wrap: wrap;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-card {
+        width: 100%; /* הסרטונים יתפסו את כל הרוחב */
+        margin: 10px 0; /* ריווח בין הסרטונים */
+    }
+
+    .video-card video {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* תיקון ל-summary */
+    .summary {
+        flex-direction: column; /* כיוון אנכי עבור המובייל */
+        width: 100%;
+        height: auto;
+    }
+
+    .summary-text {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .summary-button {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .summary-button .btn {
+        width: 80%;
+        font-size: 1em;
+        padding: 10px 15px;
+        margin-top: 10px;
+    }
+
+    /* כותרות טקסט בטלפון */
     .summary-text h3 {
         font-size: 1.5em;
     }
 
     .summary-text p {
         font-size: 1em;
-        margin: 5px 0;
-    }
-
-    .summary-button {
-        text-align: center;
-    }
-
-    .summary-button .btn {
-        width: auto;
-        padding: 10px 15px;
-        font-size: 1em;
-    }
-
-    /* התאמה של הסרטונים */
-    .videos-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .video-card {
-        flex: 1 1 calc(50% - 10px); /* סרטון תופס חצי מסך */
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .video-card video {
-        width: 100%; /* התאמת גודל הסרטון */
-        height: auto;
-    }
-
-    /* התאמה לכפתורים וקישורים */
-    .hero-content .btn,
-    .summary-button .btn {
-        font-size: 1em;
-        padding: 10px 15px;
         margin: 10px 0;
+    }
+
+    /* התאמות לכפתורים וקישורים */
+    .summary-button .btn {
+        padding: 12px 20px;
+        font-size: 1.1em;
+        margin-top: 10px;
     }
 }
