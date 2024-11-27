@@ -326,35 +326,39 @@
     }
 }
 
-/* התאמה כללית למובייל */
+/* התאמה למובייל ללא שינוי במבנה */
 @media (max-width: 480px) {
     #hero {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row; /* שמירה על מבנה אופקי */
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-        padding: 20px;
-        height: auto; /* לאפשר התאמה לגובה התוכן */
+        height: auto; /* התאמת גובה דינמית */
+        padding: 10px;
     }
 
     .hero-content {
-        width: 100%;
-        padding: 0 10px;
+        flex: 3;
+        padding: 10px;
+        width: 60%; /* הבטחת רוחב יחסי */
     }
 
     .hero-image {
-        width: 100%;
-        max-width: 300px; /* מגבלת גודל תמונה */
+        flex: 2;
+        width: 40%; /* שמירה על יחס בין הטקסט לתמונה */
+        max-width: 100%;
         height: auto;
+        border-radius: 10px;
     }
 
     .text-container {
-        width: 100%;
-        padding: 15px;
-        box-sizing: border-box;
+        background-color: #07288a;
+        padding: 10px;
+        border-radius: 5px;
     }
 
-    .hero-content h1 {
-        font-size: 1.8em; /* התאמה לגודל מסך קטן */
+    .text-container h1 {
+        font-size: 2em; /* התאמת גודל כותרת */
     }
 
     .hero-content p {
@@ -363,40 +367,46 @@
     }
 
     .hero-content .btn {
-        width: 90%;
-        font-size: 1em;
-        margin: 10px auto;
-    }
-
-    .summary {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    .summary-text {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .summary-button {
-        width: 100%;
-        text-align: center;
-    }
-
-    .summary-button .btn {
-        width: 80%;
+        width: auto;
+        padding: 10px 15px;
         font-size: 1em;
     }
 
     .videos-container {
-        flex-direction: column;
-        gap: 15px;
+        display: flex;
+        flex-wrap: nowrap; /* מניעת שבירת השורה */
+        gap: 10px;
+        overflow-x: auto; /* גלילה אופקית */
     }
 
     .video-card {
-        width: 100%;
-        max-width: 100%; /* להבטיח התאמה מלאה */
+        flex: 0 0 auto;
+        width: 250px; /* התאמה לגודל קבוע */
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: row; /* שמירה על תצוגה אופקית */
+        height: 250px;
+        width: 100vw;
+    }
+
+    .summary-text {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .summary-button {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .summary-button .btn {
+        width: auto;
+        padding: 10px 15px;
+        font-size: 1.2em;
     }
 }
 
