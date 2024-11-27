@@ -124,8 +124,7 @@
     width: 100vw; /* מכסה את כל רוחב המסך */
 }
 
-.summary .reversed {
-    display: flex;
+.summary.reversed {
     flex-direction: row-reverse; /* היפוך כיוון לתקציר */
 }
 
@@ -340,6 +339,9 @@
         flex-direction: column; /* שינוי הכיוון לאנכי */
         text-align: center; /* ממורכז */
         height: auto; /* גובה מותאם */
+    }
+    .summary.reversed {
+        flex-direction: column; /* היפוך כיוון לתקציר */
     }
     
 
