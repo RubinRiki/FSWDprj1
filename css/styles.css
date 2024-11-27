@@ -133,36 +133,40 @@ footer h3 {
     header {
         flex-direction: row;
         height: auto;
-        font-size: smaller;
     }
 
     header div {
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin: 10px;
     }
 
+  
+    /* Footer */
     .footer-container {
-        flex-direction: row;
+        flex-direction: column; /* סידור אנכי לפוטר */
         gap: 20px;
+        text-align: center;
     }
 
     .footer-section {
-        width: 100%; 
+        width: 100%; /* כל פוטר ייקח 100% */
+        
     }
 
-    .social-icons {
-        grid-template-columns: repeat(4, 1fr); 
-        width: auto;
+    .social-icons img {
+        width: 30px; /* גודל קטן יותר לאייקונים */
+        height: auto;
+        margin: 5px;
+    }
+    .social-icons  ul{
+        justify-content: center;
     }
 
-    footer h3 {
-        font-size: 1.2em;
+    form input[type="email"] {
+        width: 90%; /* התאמת שדות הפורם */
+        margin: 10px auto;
     }
 
-    .footer-section form input {
-        box-sizing: border-box; 
-        max-width: 70%;
-    }
     .footer-section form button{
         width: 30%;
     }

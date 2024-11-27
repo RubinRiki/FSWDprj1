@@ -110,7 +110,7 @@
     background-color: #f9f9f9;
 }
 
-.summary-container .summary.reversed {
+.summary-container  {
     display: flex;
     flex-direction: column;
     gap: 0; /* בלי רווחים בין התקצירים */
@@ -124,7 +124,8 @@
     width: 100vw; /* מכסה את כל רוחב המסך */
 }
 
-.summary.reversed {
+.summary .reversed {
+    display: flex;
     flex-direction: row-reverse; /* היפוך כיוון לתקציר */
 }
 
@@ -419,27 +420,7 @@
         font-size: smaller;
     }
 
-    /* Footer */
-    .footer-container {
-        flex-direction: column; /* סידור אנכי לפוטר */
-        gap: 20px;
-        text-align: center;
-    }
-
-    .footer-section {
-        width: 100%; /* כל פוטר ייקח 100% */
-    }
-
-    .social-icons img {
-        width: 30px; /* גודל קטן יותר לאייקונים */
-        height: auto;
-        margin: 5px;
-    }
-
-    form input[type="email"], form button {
-        width: 90%; /* התאמת שדות הפורם */
-        margin: 10px auto;
-    }
+    
 }
 
 /* מסכים בינוניים */
@@ -473,12 +454,5 @@
     .tips {
         grid-template-columns: repeat(2, 1fr); /* שני טיפים בשורה */
     }
-
-    .footer-container {
-        justify-content: space-around;
-    }
-
-    .footer-section {
-        width: 45%; /* התאמה לגודל המסך */
-    }
 }
+   
