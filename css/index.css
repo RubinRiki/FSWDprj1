@@ -110,7 +110,7 @@
     background-color: #f9f9f9;
 }
 
-.summary-container {
+.summary-container .summary.reversed {
     display: flex;
     flex-direction: column;
     gap: 0; /* בלי רווחים בין התקצירים */
@@ -301,78 +301,97 @@
     color: #FB6F60;
 }
 
+/* General styling for responsive design */
 @media (max-width: 768px) {
-    /* עיצוב החלק העליון והכותרת */
+
     #hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* סידור אנכי */
+        height: auto; /* התאמה לגובה דינמי */
+        padding: 20px;
+        text-align: center; /* טקסט ממורכז */
     }
 
     .hero-content {
-        padding: 10px;
-        width: 90%;
+        flex: 1;
+        width: 100%; /* הרחבה לכל הרוחב */
+        font-size: smaller;
+    }
+    .hero-content h3{
+        font-size: smaller;
+
     }
 
     .hero-image {
-        max-width: 80%;
-        height: auto;
+        max-width: 70%; /* גודל מותאם לתמונה */
+        margin : 20px;
+        transform: scaleX(1.5);
+        justify-self: center;
     }
 
-    /* יישור הסקשנים */
+    /* Summaries Section */
     .summary-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* סידור אנכי */
         gap: 20px;
     }
 
     .summary {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* שינוי הכיוון לאנכי */
+        text-align: center; /* ממורכז */
+        height: auto; /* גובה מותאם */
+    }
+    
+
+    .summary-text {
+        padding: 20px;
+        font-size: smaller;
     }
 
-    .summary.reversed {
-        flex-direction: column;
+    .summary-button{
+        width: 100%;        
+    }
+    .summary-button .btn {
+        margin-top: 10px;
+        margin-bottom: 10px;        
+        
     }
 
-    /* חדשות ועדכונים */
-    .news-container {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+
+    /* Videos and Tips */
+    #tips-videos {
+        padding: 20px;
     }
 
-    .news-item {
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-    }
-
-    /* טיפים ווידאו */
     .videos-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
+        display: grid; /* שימוש בגריד לעיצוב */
+        gap: 20px; /* רווח בין הסרטונים */
+        grid-template-columns: repeat(2, 1fr); /* 2 סרטונים בכל שורה */
+        justify-content: center; /* יישור מרכזי */
+        align-items: center; /* יישור מרכזי אנכי */
     }
+    
 
     .video-card {
-        width: 90%;
+        width: 100%; /* סרטון ייקח את כל הרוחב */
+        max-width: 300px;
     }
 
-    video {
-        width: 100%;
-        height: auto;
+    .tips {
+        /* טיפים בשורה אחת */
+        gap: 15px;
+        
     }
 
-    /* המלצות וסטטיסטיקה */
+    .tips div {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    /* Testimonials and Stats */
     .testimonials-stats-container {
-        display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 20px;
+        text-align: center;
     }
 
     .testimonials, .stats {
@@ -380,31 +399,86 @@
     }
 
     .stats div {
-        text-align: center;
-        padding: 10px 0;
+        width: 100%; /* התאמה לגודל המסך */
     }
 
-    /* פוטר */
-    .footer-container {
+    /* News Section */
+    #news {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .news-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* סידור אנכי */
+        gap: 15px;
+    }
+
+    .news-item {
+        padding: 10px;
+        font-size: smaller;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column; /* סידור אנכי לפוטר */
         gap: 20px;
         text-align: center;
     }
 
     .footer-section {
-        width: 100%;
+        width: 100%; /* כל פוטר ייקח 100% */
     }
 
     .social-icons img {
-        width: 30px;
+        width: 30px; /* גודל קטן יותר לאייקונים */
         height: auto;
         margin: 5px;
     }
 
     form input[type="email"], form button {
-        width: 100%;
-        padding: 10px;
-        margin: 5px 0;
+        width: 90%; /* התאמת שדות הפורם */
+        margin: 10px auto;
+    }
+}
+
+/* מסכים בינוניים */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #hero {
+        padding: 30px;
+    }
+
+    .hero-content {
+        width: 70%;
+    }
+
+    .hero-image {
+        max-width: 50%; /* גודל תמונה קטן יותר */
+    }
+
+    .summary-container {
+        flex-wrap: wrap; /* עטיפת תקצירים */
+    }
+
+    .summary {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .videos-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .tips {
+        grid-template-columns: repeat(2, 1fr); /* שני טיפים בשורה */
+    }
+
+    .footer-container {
+        justify-content: space-around;
+    }
+
+    .footer-section {
+        width: 45%; /* התאמה לגודל המסך */
     }
 }
