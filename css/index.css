@@ -301,3 +301,52 @@
 .news-item a:hover {
     color: #FB6F60;
 }
+
+/* Media Queries for responsive design */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column; /* Stack hero section vertically */
+        align-items: center; /* Center content */
+    }
+
+    .hero-content, .hero-image {
+        max-width: 90%; /* Reduce width for smaller screens */
+    }
+
+    .videos-container {
+        flex-wrap: wrap;
+        gap: 10px; /* Smaller gap between videos */
+    }
+
+    .summary {
+        flex-direction: column; /* Stack summaries vertically */
+        height: auto; /* Adjust height for better fit */
+    }
+}
+
+/* Mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .text-container h1 {
+        font-size: 2em; /* Smaller font size for headings */
+    }
+
+    .hero-content p {
+        font-size: 1em; /* Smaller paragraph text */
+    }
+
+    .hero-content .btn {
+        font-size: 0.9em; /* Adjust button size */
+        padding: 8px 15px;
+    }
+
+    .video-card {
+        max-width: 100%; /* Videos take full width */
+    }
+
+    .stats div {
+        min-width: 100px; /* Adjust stat box size */
+        padding: 10px; /* Smaller padding */
+    }
+}
