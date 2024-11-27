@@ -323,7 +323,6 @@
         width: 100%;
         padding: 10px 0;
     }
-    
 
     .text-container h1 {
         color: #ffffff;
@@ -334,7 +333,6 @@
         width: 60%; /* גודל תמונה מותאם לטלפון */
         max-width: 200px;
         margin: 15px 0;
-        text-align: left;
     }
 
     .hero-content p {
@@ -342,6 +340,5 @@
         color: #333;
         margin: 10px 20px;
         line-height: 1.5;
-        text-align: right;
     }
 }
