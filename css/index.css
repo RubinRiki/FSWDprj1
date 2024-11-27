@@ -16,7 +16,6 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
 }
 
 .text-container {
@@ -24,7 +23,6 @@
     padding: 20px;
     border-radius: 5px;
     display: inline-block;
-
 }
 
 .text-container h1 {
@@ -40,7 +38,7 @@
 }
 
 .hero-content .btn {
-    background-color: #FB6F60; /* כפתור בצבע וורוד */
+    background-color: #FB6F60; /* כפתור בצבע ורוד */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -65,7 +63,7 @@
 
 /* עיצוב כללי לסקשן */
 #tips-videos {
-    background-color: #FF7A7A; /* Gradient background *//* צבע רקע מותאם - ניתן לשנות */
+    background-color: #FF7A7A; /* צבע רקע מותאם */
     padding: 50px 20px;
     text-align: center;
     box-sizing: border-box;
@@ -128,15 +126,14 @@
     flex-direction: row-reverse; /* היפוך כיוון לתקציר */
 }
 
-/* עיצוב לטקסט */
 /* טקסט בתוך תקציר */
 .summary-text {
     flex: 1;
     background-color: #fff;
     display: flex;
-    flex-direction: column; /* מסדר את התוכן בעמודה */
-    align-items: center; /* מרכז את התוכן אופקית */
-    justify-content: center; /* מרכז את התוכן אנכית */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
@@ -145,16 +142,15 @@
 .summary-text h3 {
     font-size: 1.8em;
     color: #333;
-    margin-bottom: 10px; /* מרווח קטן בין הכותרת לפסקה */
+    margin-bottom: 10px;
 }
 
 .summary-text p {
     font-size: 1.2em;
     color: #555;
     line-height: 1.6;
-    margin: 0; /* מבטיח שלא יהיו שוליים מיותרים */
+    margin: 0;
 }
-
 
 /* עיצוב לכפתור */
 .summary-button {
@@ -182,162 +178,50 @@
     color: #0056b3;
 }
 
-/* חוויות סטודנטים ומספרים */
-#testimonials-stats {
-    padding: 50px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.testimonials-stats-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.testimonials {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex: 1;
-    max-width: 600px;
-}
-
-.testimonial {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-    font-style: italic;
-    color: #555;
-}
-
-.testimonial h4 {
-    margin-top: 10px;
-    color: #07288a;
-    font-weight: bold;
-}
-
-.stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    flex: 1;
-    max-width: 600px;
-}
-
-.stats div {
-    background: #07288a;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    min-width: 120px;
-    flex: 1 1 200px;
-}
-
-.stats h3 {
-    font-size: 2em;
-    margin-bottom: 5px;
-}
-
-#news {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#news h2 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #07288a;
-    margin-bottom: 30px;
-}
-
-.news-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.news-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.news-item h3 {
-    color: #FB6F60;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.news-item p {
-    color: #555;
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-.news-item a {
-    color: #07288a;
-    text-decoration: underline;
-}
-
-.news-item a:hover {
-    color: #FB6F60;
-}
-
+/* התאמה לגרסת מובייל */
 @media (max-width: 768px) {
-    /* סגנון לקטע ה-Hero במסכים קטנים */
     #hero {
-        display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        background-color: #f5f5f5; /* רקע עדין */
+        background-color: #f5f5f5;
     }
 
     .hero-content {
-        flex-direction: column; /* הצגת התמונה והטקסט אחד מתחת לשני */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .text-container {
-        background-color: #07288a; /* רקע כחול */
         width: 100%;
         padding: 10px 0;
     }
 
     .text-container h1 {
-        color: #ffffff;
-        font-size: 2rem; /* גודל כותרת קטן יותר לטלפון */
+        font-size: 2rem;
     }
 
     .hero-image {
-        width: 60%; /* גודל תמונה מותאם לטלפון */
+        width: 60%;
         max-width: 200px;
         margin: 15px 0;
     }
 
-    .hero-content p {
-        font-size: 1rem;
-        color: #333;
-        margin: 10px 20px;
-        line-height: 1.5;
+    .summary-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summary {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .summary-text, .summary-button {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
     }
 }
