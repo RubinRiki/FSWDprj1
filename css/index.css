@@ -301,7 +301,6 @@
     color: #FB6F60;
 }
 
-/* Media Queries for Mobile (max-width: 480px) */
 @media (max-width: 768px) {
     /* סגנון לקטע ה-Hero במסכים קטנים */
     #hero {
