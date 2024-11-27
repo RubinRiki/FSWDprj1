@@ -328,72 +328,84 @@
 
 /* Media Queries for Mobile (max-width: 480px) */
 
-/* סקשן hero - התאמה עבור מובייל */
+/* סקשן hero - תמונה ליד טקסט במקום מתחת */
 @media (max-width: 480px) {
     #hero {
-        flex-direction: column; /* סידור סטייל סטאק, לא אופקי */
-        justify-content: center;
+        flex-direction: row; /* לא Stack אלא לשים את התמונה לצד הטקסט */
+        justify-content: flex-start;
         align-items: center;
-        padding: 20px;
         height: auto;
-    }
-
-    .hero-content {
-        width: 100%;
-        text-align: center;
         padding: 10px;
     }
 
+    .hero-content {
+        width: 60%; /* כ-60% מהשטח שמוקדש לטקסט */
+        text-align: left;
+    }
+
     .hero-image {
-        width: 80%; /* התמונה תוקטן ויתפוס 80% מהמסך */
-        max-width: 250px;
+        width: 35%; /* התמונה תהיה קטנה יותר ותוקטן ל-35% */
+        max-width: 150px;
         height: auto;
-        margin-top: 20px; /* ריווח עם התוכן */
+        margin-left: 20px; /* ריווח בין התמונה לטקסט */
     }
 
     .text-container {
-        padding: 15px;
+        padding: 10px;
         width: 100%;
         box-sizing: border-box;
     }
 
     .hero-content .btn {
-        width: 90%; /* כפתור ייקח 90% מהאורך */
+        width: 90%;
         font-size: 1em;
-        margin: 10px auto; /* ממרכז את הכפתור */
+        margin: 10px 0; /* ריווח בין הכפתור לטקסט */
     }
 
-    /* תיקון גודל הסרטונים */
-    .videos-container {
-        flex-wrap: wrap;
-        gap: 10px;
-        display: flex;
-        justify-content: center;
+    /* עיצוב טקסט מלגות */
+    #tips-videos h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
     }
 
-    .video-card {
-        width: 100%; /* הסרטונים יתפסו את כל הרוחב */
-        margin: 10px 0; /* ריווח בין הסרטונים */
+    .text-container h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
     }
 
-    .video-card video {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* תיקון למלגות, כפתורים וקישורים */
+    .text-container p {
+        font-size: 1em;
+        color: #333;
+        line-height: 1.5;
     }
 
-    /* תיקון ל-summary */
-    .summary {
-        flex-direction: column; /* כיוון אנכי עבור המובייל */
-        width: 100%;
-        height: auto;
+    .text-container a {
+        color: #07288a;
+        text-decoration: underline;
     }
 
+    .text-container a:hover {
+        color: #FB6F60;
+    }
+    
+    /* עיצוב התוכן של מי אנחנו/זכויות */
     .summary-text {
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
+    }
+
+    .summary-text h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .summary-text p {
+        font-size: 1em;
+        line-height: 1.5;
+        margin-bottom: 10px;
     }
 
     .summary-button {
@@ -404,25 +416,8 @@
 
     .summary-button .btn {
         width: 80%;
-        font-size: 1em;
-        padding: 10px 15px;
-        margin-top: 10px;
-    }
-
-    /* כותרות טקסט בטלפון */
-    .summary-text h3 {
-        font-size: 1.5em;
-    }
-
-    .summary-text p {
-        font-size: 1em;
-        margin: 10px 0;
-    }
-
-    /* התאמות לכפתורים וקישורים */
-    .summary-button .btn {
-        padding: 12px 20px;
         font-size: 1.1em;
+        padding: 12px 20px;
         margin-top: 10px;
     }
 }
