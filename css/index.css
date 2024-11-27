@@ -362,7 +362,7 @@
         margin: 10px 0; /* ריווח בין הכפתור לטקסט */
     }
 
-    /* עיצוב טקסט מלגות */
+    /* עיצוב טקסט מלגות
     #tips-videos h2 {
         font-size: 2em;
         margin-bottom: 20px;
@@ -371,7 +371,7 @@
     .text-container h1 {
         font-size: 1.8em;
         margin-bottom: 15px;
-    }
+    } */
 
     /* תיקון למלגות, כפתורים וקישורים */
     .text-container p {
