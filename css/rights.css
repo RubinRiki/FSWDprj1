@@ -1,23 +1,31 @@
 /* כותרת העמוד */
 #page-title {
-    background: #ff9286;
-    color: white;
     text-align: center;
     padding: 40px 20px;
+    
 }
 
 #page-title h1 {
     font-size: 3em; /* גודל כותרת מוגדל */
+    color: #07288a;
+
 }
 
 #page-title p {
     font-size: 1.4em; /* מלל מוגדל יותר */
     line-height: 1.8; /* ריווח שורות מוגדל */
+
 }
 
 /* קטגוריות זכויות */
+.rights-container {
+    display: grid; /* שימוש בגריד לעיצוב */
+    grid-template-columns: repeat(2, 1fr); /* 2 זכויות בכל שורה */
+    gap: 20px; /* רווח בין הכרטיסים */
+    padding: 20px;
+}
+
 details {
-    margin: 50px;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -41,8 +49,8 @@ summary:hover {
 
 details p {
     padding: 15px 0;
-    font-size: 1.3em; /* גודל מלל מוגדל */
-    line-height: 1.8; /* ריווח שורות גדול יותר */
+    font-size: 1.1em; 
+    line-height: 1.8; 
 }
 
 details a.btn {
@@ -52,9 +60,27 @@ details a.btn {
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2em; /* כפתור גדול יותר */
+    font-size: 1.2em; 
 }
 
 details a.btn:hover {
     background: #FB6F60;
+}
+
+@media (max-width: 768px) {
+    .rights-container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+   
+    #page-title p {
+        font-size: 1em ;
+    }
+
+    details a.btn {
+    font-size: 1.1em; 
+    }
+    details p {
+    font-size: 1em; 
+
+    }
 }
