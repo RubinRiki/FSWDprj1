@@ -90,6 +90,10 @@
     margin-top: 40px;
     padding: 20px;
 }
+#team h2{
+    font-size: 2em;
+    color: #07288a ;
+}
 
 .team-grid {
     display: grid; /* Use grid layout */
@@ -184,3 +188,74 @@
 #about-page #more {
     font-size: large;
 }
+#about-map {
+    background-color: #f9f9f9; /* רקע בהיר */
+    padding: 40px 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הצללה */
+    text-align: center;
+}
+
+#about-map h2 {
+    font-size: 2.5em;
+    color: #07288a;
+    margin-bottom: 20px;
+}
+
+#about-map p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#about-map embed {
+    width: 90%;
+    max-width: 800px;
+    height: 450px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#about-map a {
+    color: #FB6F60;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#about-map a:hover {
+    color: #07288a;
+}
+@media (max-width: 768px) {
+    /* כותרות ותכנים */
+    #about-page #title, 
+    #goals h2, 
+    #team h2, 
+    #about-map h2 {
+        font-size: 1.8em; /* גודל כותרת מוקטן */
+    }
+
+    #about-page #about p,
+    #about-map p,
+    .team-member p,
+    .card p {
+        font-size: 1em; /* טקסט קטן יותר */
+    }
+
+
+    /* טבלה */
+    #about-page table {
+        font-size: 0.8em; /* טקסט קטן יותר בטבלה */
+    }
+
+    /* וידאו */
+    #about-page #video video,
+    #about-map embed {
+        width: 100%; 
+        height: auto;
+    }
+}
+
+

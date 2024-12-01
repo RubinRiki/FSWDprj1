@@ -17,40 +17,48 @@
 
 }
 
-/* קטגוריות זכויות */
-.rights-container {
-    display: grid; /* שימוש בגריד לעיצוב */
-    grid-template-columns: repeat(2, 1fr); /* 2 זכויות בכל שורה */
-    gap: 20px; /* רווח בין הכרטיסים */
-    padding: 20px;
-}
-
 details {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* מאפשר מעבר חלק */
+    overflow: hidden;
+}
+
+details[open] {
+    grid-column: span 2; /* תופס את כל רוחב השורה */
+    padding: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* הצללה מוגדלת */
+    transform: scale(1.02); /* אפקט הגדלה קל */
 }
 
 summary {
-    font-size: 1.8em; /* כותרת זכויות גדולה יותר */
+    font-size: 1.8em; 
     font-weight: bold;
     cursor: pointer;
     padding: 10px;
     background: #07288a;
     color: white;
     border-radius: 5px;
+    transition: background 0.3s ease; /* מעבר חלק בצבע */
 }
 
 summary:hover {
-    background: #FB6F60;
+    background: #FB6F60; /* שינוי צבע בלחיצה */
 }
 
 details p {
     padding: 15px 0;
     font-size: 1.1em; 
     line-height: 1.8; 
+    opacity: 0;
+    transition: opacity 0.3s ease; /* מעבר חלק להופעת הטקסט */
+}
+
+details[open] p {
+    opacity: 1; /* הטקסט מופיע רק כשהפרטים פתוחים */
 }
 
 details a.btn {
@@ -60,11 +68,49 @@ details a.btn {
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2em; 
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-details a.btn:hover {
-    background: #FB6F60;
+details[open] a.btn {
+    opacity: 1;
+}
+
+.rights-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+    transition: all 0.3s ease; /* מעבר חלק */
+}
+
+
+.podcast {
+    margin-top: 20px;
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.podcast iframe {
+    width: 550pX;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.podcast h2 {
+    font-size: 2em;
+    color: #07288a;
+    line-height: 1.6;
+    flex: 2;
+    margin-left: 50px;
 }
 
 @media (max-width: 768px) {
@@ -81,6 +127,16 @@ details a.btn:hover {
     }
     details p {
     font-size: 1em; 
-
+    }
+    .podcast{
+        flex-direction: column;
+    }
+    .podcast h2{
+      font-size: 1.5em;
+    }
+    .podcast iframe{
+        width: 100%;
+        height: 100% ;
+        margin-top: 20px;
     }
 }

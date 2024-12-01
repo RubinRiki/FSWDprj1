@@ -13,18 +13,18 @@ header {
     background-color: #07288a;
 }
 
-header div {
+header nav {
     text-align: center; 
     font-size: 1.5em; 
     color: white;
 }
 
-header div a {
+header nav a {
     text-decoration: none; 
     color: white;
 }
 
-header div a:not(:last-child)::after {
+header nav a:not(:last-child)::after {
     content: "•"; 
     margin: 20px; 
     color: #FB6F60; 
@@ -135,7 +135,7 @@ footer h3 {
         height: auto;
     }
 
-    header div {
+    header nav {
         font-size: 1.1em;
         margin: 10px;
     }

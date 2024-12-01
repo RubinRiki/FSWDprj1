@@ -11,12 +11,14 @@
 
 /* טקסט */
 .hero-content {
-    flex: 3; /* 60% מהשטח */
+    flex: 3; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
+    opacity: 0; /* בלתי נראה בהתחלה */
+    animation: slideInFromRight 1s ease forwards; /* אנימציה מימין */
+    animation-delay: 0.5s; /* עיכוב קל */
 }
 
 .text-container {
@@ -39,28 +41,40 @@
     margin: 20px 0;
 }
 
-.hero-content .btn {
-    background-color: #FB6F60; /* כפתור בצבע וורוד */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1em;
-    text-align: center;
-    width: max-content;
-    transition: background 0.3s ease;
+/* אנימציה לכניסה מימין */
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); /* מוזז ימינה */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* במיקום המקורי */
+    }
 }
 
-.hero-content .btn:hover {
-    background-color: #d95448;
+/* אנימציה לכניסה משמאל */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); /* מוזז שמאלה */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* במיקום המקורי */
+    }
 }
+
 
 /* תמונה */
 .hero-image {
     flex: 2; /* 40% מהשטח */
     max-width: 50%;
     border-radius: 10px; /* קצוות מעוגלים לתמונה */
+    margin: 40px;
+    opacity: 0; /* בלתי נראה בהתחלה */
+    animation: slideInFromLeft 1s ease forwards; /* אנימציה משמאל */
+    animation-delay: 0.5s; /* עיכוב קל */
 }
 
 /* עיצוב כללי לסקשן */
@@ -128,6 +142,8 @@
     flex-direction: row-reverse; /* היפוך כיוון לתקציר */
 }
 
+
+
 /* עיצוב לטקסט */
 /* טקסט בתוך תקציר */
 .summary-text {
@@ -177,10 +193,19 @@
     transition: background 0.3s, color 0.3s;
 }
 
-.summary-button .btn:hover {
-    background: #fff;
-    color: #0056b3;
+/* אפקט על התקצירים */
+.summary:hover {
+    background-color: #e0e0e0; /* רקע אפור בהיר */
+    transition: background-color 0.5s ease;
 }
+
+.summary:hover .btn {
+    background-color: #07288a; /* צבע רקע לכפתור */
+    transform: scale(1.5); /* הגדלה */
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+
 
 /* חוויות סטודנטים ומספרים */
 #testimonials-stats {
@@ -358,6 +383,7 @@
         margin-bottom: 10px;        
         
     }
+    
 
 
     /* Videos and Tips */
