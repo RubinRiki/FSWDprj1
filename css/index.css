@@ -1,369 +1,364 @@
-/* עיצוב כללי לסקשן */
+/* General styling for the section */
 #hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100vh;
-    background-color: #ffffff; /* רקע כללי לעמוד */
-    box-sizing: border-box;
-    margin: 0;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center the content vertically */
+    justify-content: space-between; /* Distribute space between items */
+    height: 100vh; /* Full viewport height */
+    background-color: #ffffff; /* General background color for the page */
+    box-sizing: border-box; /* Include padding and border in the element's width/height */
+    margin: 0; /* Remove default margin */
 }
 
-/* טקסט */
+/* Text styling */
 .hero-content {
-    flex: 3; 
+    flex: 3; /* Takes up 3 parts of the available space */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    opacity: 0; /* בלתי נראה בהתחלה */
-    animation: slideInFromRight 1s ease forwards; /* אנימציה מימין */
-    animation-delay: 0.5s; /* עיכוב קל */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Vertically center the content */
+    text-align: center; /* Center the text horizontally */
+    opacity: 0; /* Initially invisible */
+    animation: slideInFromRight 1s ease forwards; /* Animation sliding from right */
+    animation-delay: 0.5s; /* Slight delay before the animation starts */
 }
 
 .text-container {
-    background-color: #07288a; /* רקע כחול */
+    background-color: #07288a; /* Blue background */
     padding: 20px;
-    border-radius: 5px;
-    display: inline-block;
-
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Keep the element inline */
 }
 
 .text-container h1 {
-    font-size: 2.5em;
-    color: #fff;
-    margin: 0;
+    font-size: 2.5em; /* Large font size */
+    color: #fff; /* White text */
+    margin: 0; /* Remove margin */
 }
 
 .hero-content p {
-    font-size: 1.5em;
-    color: #333;
-    margin: 20px 0;
+    font-size: 1.5em; /* Font size for paragraphs */
+    color: #333; /* Dark gray text */
+    margin: 20px 0; /* Margin above and below the text */
 }
 
-/* אנימציה לכניסה מימין */
+/* Animation for sliding in from the right */
 @keyframes slideInFromRight {
     0% {
         opacity: 0;
-        transform: translateX(100px); /* מוזז ימינה */
+        transform: translateX(100px); /* Move 100px to the right */
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* במיקום המקורי */
+        transform: translateX(0); /* Original position */
     }
 }
 
-/* אנימציה לכניסה משמאל */
+/* Animation for sliding in from the left */
 @keyframes slideInFromLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px); /* מוזז שמאלה */
+        transform: translateX(-100px); /* Move 100px to the left */
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* במיקום המקורי */
+        transform: translateX(0); /* Original position */
     }
 }
 
-
-/* תמונה */
+/* Image styling */
 .hero-image {
-    flex: 2; /* 40% מהשטח */
-    max-width: 50%;
-    border-radius: 10px; /* קצוות מעוגלים לתמונה */
-    margin: 40px;
-    opacity: 0; /* בלתי נראה בהתחלה */
-    animation: slideInFromLeft 1s ease forwards; /* אנימציה משמאל */
-    animation-delay: 0.5s; /* עיכוב קל */
+    flex: 2; /* Takes up 2 parts of the available space */
+    max-width: 50%; /* Max width of the image */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin: 40px; /* Margin around the image */
+    opacity: 0; /* Initially invisible */
+    animation: slideInFromLeft 1s ease forwards; /* Animation sliding from left */
+    animation-delay: 0.5s; /* Slight delay before the animation starts */
 }
 
-/* עיצוב כללי לסקשן */
+/* General styling for the tips and videos section */
 #tips-videos {
-    background-color: #FF7A7A; /* Gradient background *//* צבע רקע מותאם - ניתן לשנות */
+    background-color: #FF7A7A; /* Gradient background - can be changed */
     padding: 50px 20px;
-    text-align: center;
+    text-align: center; /* Center text */
     box-sizing: border-box;
-    margin: 0; /* ללא שוליים */
+    margin: 0; /* No margin */
 }
 
-/* עיצוב הכותרת */
+/* Styling for the heading */
 #tips-videos h2 {
-    font-size: 2.5em;
-    color: #ffffff;
-    margin-bottom: 30px;
-    justify-content: right;
-    align-items: flex-start;
+    font-size: 2.5em; /* Large font size for heading */
+    color: #ffffff; /* White text */
+    margin-bottom: 30px; /* Margin below the heading */
+    justify-content: right; /* Align text to the right */
+    align-items: flex-start; /* Align items to the start (left) */
 }
 
-/* עיצוב מיכל הסרטונים */
+/* Container for the video cards */
 .videos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* רווח בין הסרטונים */
+    display: flex; /* Flexbox layout for videos */
+    flex-wrap: wrap; /* Allow videos to wrap onto new lines */
+    justify-content: center; /* Center the videos */
+    gap: 20px; /* Space between the videos */
 }
 
-/* עיצוב כל סרטון */
+/* Styling for each video card */
 .video-card {
-    flex: 1 1 calc(25% - 20px); /* כל סרטון תופס 25% מהשורה, עם מרווח */
-    max-width: 300px; /* מקסימום רוחב לסרטון */
+    flex: 1 1 calc(25% - 20px); /* Each video takes 25% of the row, with gap */
+    max-width: 300px; /* Max width for each video */
     box-sizing: border-box;
 }
 
 .video-card video {
-    width: 100%; /* סרטון יתאים לגודל הכרטיס */
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* הצללה קלה */
+    width: 100%; /* Video takes full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow around the video */
 }
 
-/* סקשן כללי */
+/* General styling for the summaries section */
 #summaries {
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+    background-color: #f9f9f9; /* Light gray background */
 }
 
-.summary-container  {
-    display: flex;
-    flex-direction: column;
-    gap: 0; /* בלי רווחים בין התקצירים */
+/* Container for the summaries */
+.summary-container {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack the summaries vertically */
+    gap: 0; /* No gap between summaries */
 }
 
-/* עיצוב כללי לתקציר */
+/* General styling for each summary */
 .summary {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 250px; /* גובה אחיד */
-    width: 100vw; /* מכסה את כל רוחב המסך */
+    display: flex; /* Flexbox layout for each summary */
+    flex-wrap: nowrap; /* No wrapping of the content */
+    height: 250px; /* Fixed height for each summary */
+    width: 100vw; /* Full viewport width */
 }
 
 .summary.reversed {
-    flex-direction: row-reverse; /* היפוך כיוון לתקציר */
+    flex-direction: row-reverse; /* Reverse the direction of content */
 }
 
-
-
-/* עיצוב לטקסט */
-/* טקסט בתוך תקציר */
+/* Text inside each summary */
 .summary-text {
-    flex: 1;
-    background-color: #fff;
+    flex: 1; /* Take equal space */
+    background-color: #fff; /* White background for text section */
     display: flex;
-    flex-direction: column; /* מסדר את התוכן בעמודה */
-    align-items: center; /* מרכז את התוכן אופקית */
-    justify-content: center; /* מרכז את התוכן אנכית */
-    text-align: center;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center the text */
     padding: 20px;
     box-sizing: border-box;
 }
 
 .summary-text h3 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 10px; /* מרווח קטן בין הכותרת לפסקה */
+    font-size: 1.8em; /* Font size for heading */
+    color: #333; /* Dark gray color */
+    margin-bottom: 10px; /* Space between heading and paragraph */
 }
 
 .summary-text p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.6;
-    margin: 0; /* מבטיח שלא יהיו שוליים מיותרים */
+    font-size: 1.2em; /* Font size for paragraph */
+    color: #555; /* Medium gray text */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0; /* Remove margin */
 }
 
-
-/* עיצוב לכפתור */
+/* Styling for the button inside each summary */
 .summary-button {
     flex: 1;
-    background-color: #07288a;
+    background-color: #07288a; /* Blue background */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+    align-items: center; /* Center button content */
+    justify-content: center; /* Center button content */
+    color: #fff; /* White text */
 }
 
 .summary-button .btn {
-    color: #fff;
-    background: none;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.2em;
-    text-decoration: none;
-    transition: background 0.3s, color 0.3s;
+    color: #fff; /* White text for the button */
+    background: none; /* No background */
+    border: 2px solid #fff; /* White border */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2em; /* Font size for button */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s, color 0.3s; /* Smooth transition on hover */
 }
 
-/* אפקט על התקצירים */
+/* Hover effect for the summary */
 .summary:hover {
-    background-color: #e0e0e0; /* רקע אפור בהיר */
-    transition: background-color 0.5s ease;
+    background-color: #e0e0e0; /* Light gray background on hover */
+    transition: background-color 0.5s ease; /* Smooth transition */
 }
 
 .summary:hover .btn {
-    background-color: #07288a; /* צבע רקע לכפתור */
-    transform: scale(1.5); /* הגדלה */
-    transition: transform 0.5s ease, background-color 0.5s ease;
+    background-color: #07288a; /* Dark blue background for button */
+    transform: scale(1.5); /* Enlarge the button */
+    transition: transform 0.5s ease, background-color 0.5s ease; /* Smooth transition */
 }
 
-
-
-/* חוויות סטודנטים ומספרים */
+/* Testimonials and stats section */
 #testimonials-stats {
     padding: 50px 20px;
-    text-align: center;
+    text-align: center; /* Center text */
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack testimonials and stats vertically */
+    align-items: center; /* Center content */
 }
 
 .testimonials-stats-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
+    gap: 40px; /* Space between testimonials and stats */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center the content */
     width: 100%;
 }
 
+/* Styling for testimonials section */
 .testimonials {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; /* Stack testimonials vertically */
+    gap: 20px; /* Space between testimonials */
     flex: 1;
-    max-width: 600px;
+    max-width: 600px; /* Max width for testimonials */
 }
 
 .testimonial {
-    background: #f9f9f9;
+    background: #f9f9f9; /* Light gray background */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 .testimonial p {
-    font-style: italic;
-    color: #555;
+    font-style: italic; /* Italic style for text */
+    color: #555; /* Medium gray text */
 }
 
 .testimonial h4 {
-    margin-top: 10px;
-    color: #07288a;
-    font-weight: bold;
+    margin-top: 10px; /* Space above name */
+    color: #07288a; /* Blue text for name */
+    font-weight: bold; /* Bold name */
 }
 
+/* Styling for stats section */
 .stats {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    gap: 20px; /* Space between stats */
+    justify-content: center; /* Center the stats */
     flex: 1;
-    max-width: 600px;
+    max-width: 600px; /* Max width for stats */
 }
 
 .stats div {
-    background: #07288a;
-    color: white;
+    background: #07288a; /* Blue background for stats */
+    color: white; /* White text */
     padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    min-width: 120px;
-    flex: 1 1 200px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    min-width: 120px; /* Minimum width for each stat */
+    flex: 1 1 200px; /* Flexbox settings */
 }
 
 .stats h3 {
-    font-size: 2em;
-    margin-bottom: 5px;
+    font-size: 2em; /* Large font size for stat headings */
+    margin-bottom: 5px; /* Space below heading */
 }
 
+/* News section styling */
 #news {
-    max-width: 1200px;
-    margin: 50px auto;
+    max-width: 1200px; /* Max width for the news section */
+    margin: 50px auto; /* Center the section with margin */
     padding: 30px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 #news h2 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #07288a;
-    margin-bottom: 30px;
+    text-align: center; /* Center the heading */
+    font-size: 2.5em; /* Large font size for heading */
+    color: #07288a; /* Blue text */
+    margin-bottom: 30px; /* Space below heading */
 }
 
 .news-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid layout with auto-fit columns */
+    gap: 20px; /* Space between news items */
 }
 
 .news-item {
-    background-color: white;
+    background-color: white; /* White background for each news item */
     padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 .news-item h3 {
-    color: #FB6F60;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    color: #FB6F60; /* Red color for the news heading */
+    font-size: 1.5em; /* Font size for heading */
+    margin-bottom: 10px; /* Space below heading */
 }
 
 .news-item p {
-    color: #555;
-    font-size: 1.2em;
-    line-height: 1.6;
+    color: #555; /* Medium gray text */
+    font-size: 1.2em; /* Font size for paragraph */
+    line-height: 1.6; /* Line height for readability */
 }
 
 .news-item a {
-    color: #07288a;
-    text-decoration: underline;
+    color: #07288a; /* Blue color for links */
+    text-decoration: underline; /* Underline links */
 }
 
 .news-item a:hover {
-    color: #FB6F60;
+    color: #FB6F60; /* Red color for link on hover */
 }
 
 /* General styling for responsive design */
 @media (max-width: 768px) {
 
     #hero {
-        flex-direction: column; /* סידור אנכי */
-        height: auto; /* התאמה לגובה דינמי */
+        flex-direction: column; /* Vertical arrangement */
+        height: auto; /* Adjust to dynamic height */
         padding: 20px;
-        text-align: center; /* טקסט ממורכז */
+        text-align: center; /* Center the text */
     }
 
     .hero-content {
         flex: 1;
-        width: 100%; /* הרחבה לכל הרוחב */
+        width: 100%; /* Expand to full width */
         font-size: smaller;
     }
     .hero-content h3{
         font-size: smaller;
-
     }
 
     .hero-image {
-        display: none;
+        display: none; /* Hide image on small screens */
     }
 
     /* Summaries Section */
     .summary-container {
         display: flex;
-        flex-direction: column; /* סידור אנכי */
+        flex-direction: column; /* Vertical arrangement */
         gap: 20px;
     }
 
     .summary {
-        flex-direction: column; /* שינוי הכיוון לאנכי */
-        text-align: center; /* ממורכז */
-        height: auto; /* גובה מותאם */
+        flex-direction: column; /* Change direction to vertical */
+        text-align: center; /* Center the text */
+        height: auto; /* Adjust height */
     }
     .summary.reversed {
-        flex-direction: column; /* היפוך כיוון לתקציר */
+        flex-direction: column; /* Reverse the direction for the summary */
     }
     
 
@@ -373,15 +368,12 @@
     }
 
     .summary-button{
-        width: 100%;        
+        width: 100%; /* Button takes full width */
     }
     .summary-button .btn {
         margin-top: 10px;
         margin-bottom: 10px;        
-        
     }
-    
-
 
     /* Videos and Tips */
     #tips-videos {
@@ -389,23 +381,22 @@
     }
 
     .videos-container {
-        display: grid; /* שימוש בגריד לעיצוב */
-        gap: 20px; /* רווח בין הסרטונים */
-        grid-template-columns: repeat(2, 1fr); /* 2 סרטונים בכל שורה */
-        justify-content: center; /* יישור מרכזי */
-        align-items: center; /* יישור מרכזי אנכי */
+        display: grid; /* Use grid layout for videos */
+        gap: 20px; /* Gap between videos */
+        grid-template-columns: repeat(2, 1fr); /* 2 videos per row */
+        justify-content: center; /* Center the content */
+        align-items: center; /* Vertically center the content */
     }
     
 
     .video-card {
-        width: 100%; /* סרטון ייקח את כל הרוחב */
+        width: 100%; /* Video takes full width */
         max-width: 300px;
     }
 
     .tips {
-        /* טיפים בשורה אחת */
+        /* Tips in a single row */
         gap: 15px;
-        
     }
 
     .tips div {
@@ -425,7 +416,7 @@
     }
 
     .stats div {
-        width: 100%; /* התאמה לגודל המסך */
+        width: 100%; /* Adjust to screen size */
     }
 
     /* News Section */
@@ -436,7 +427,7 @@
 
     .news-container {
         display: flex;
-        flex-direction: column; /* סידור אנכי */
+        flex-direction: column; /* Vertical arrangement */
         gap: 15px;
     }
 
@@ -448,7 +439,7 @@
     
 }
 
-/* מסכים בינוניים */
+/* Medium screens */
 @media (min-width: 769px) and (max-width: 1024px) {
     #hero {
         padding: 30px;
@@ -459,25 +450,24 @@
     }
 
     .hero-image {
-        max-width: 50%; /* גודל תמונה קטן יותר */
+        max-width: 50%; /* Smaller image size */
     }
 
     .summary-container {
-        flex-wrap: wrap; /* עטיפת תקצירים */
+        flex-wrap: wrap; /* Wrap summaries */
     }
 
     .summary {
         flex-direction: row;
-        text-align: left;
+        text-align: left; /* Align text to the left */
     }
 
     .videos-container {
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-between; /* Space out videos */
     }
 
     .tips {
-        grid-template-columns: repeat(2, 1fr); /* שני טיפים בשורה */
+        grid-template-columns: repeat(2, 1fr); /* Two tips per row */
     }
 }
-   
