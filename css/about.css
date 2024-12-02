@@ -1,11 +1,11 @@
 /* Styling for the "About" page */
 #about-page main {
-    padding: 20px;
+    padding: 20px; /* Add padding to main section */
 }
 
 /* Title section on the "About" page */
 #about-page #title {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Set font family */
     color: #07288a; /* Dark blue text color */
     text-align: center; /* Center align text */
     font-size: 2em; /* Large font size */
@@ -13,7 +13,7 @@
 
 /* "About" section */
 #about-page #about {
-    text-align: center;
+    text-align: center; /* Center align the content */
     margin-bottom: 40px; /* Space below the section */
 }
 
@@ -26,36 +26,37 @@
     font-size: 1.2em; /* Larger text for list items */
     line-height: 1.5; /* Increase spacing between lines */
     color: #333; /* Dark gray text */
-    list-style-type: none; /* Remove bullets from list */
+    list-style-type: none; /* Remove bullets from the list */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
 }
 
 /* Goals section */
 #goals h2 {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    padding: 15px;
+    font-size: 2em; /* Set large font size for heading */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center align the text */
+    padding: 15px; /* Add padding around the heading */
     background: linear-gradient(135deg, #FF7A7A, #FFB347); /* Gradient background */
     color: white; /* White text color */
     border-radius: 10px; /* Rounded corners */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add space below */
 }
 
 .mission-cards {
     display: grid; /* Use grid layout */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
     gap: 20px; /* Space between cards */
-    padding: 20px;
+    padding: 20px; /* Add padding around cards */
 }
 
+/* Individual card styling */
 .card {
     background: white; /* White background for cards */
     border: 1px solid #ddd; /* Light gray border */
     border-radius: 15px; /* Rounded corners */
-    padding: 20px;
-    text-align: center; /* Center text */
+    padding: 20px; /* Padding inside the card */
+    text-align: center; /* Center align text */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
     transition: transform 0.3s; /* Smooth transition on hover */
 }
@@ -67,49 +68,54 @@
 .card h3 {
     font-size: 1.5em; /* Heading font size */
     color: #FF7A7A; /* Light red heading color */
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Space below the heading */
 }
 
 .card p {
-    font-size: 1em;
+    font-size: 1em; /* Standard paragraph size */
     color: #555; /* Medium gray text color */
-    line-height: 1.6;
+    line-height: 1.6; /* Line spacing for readability */
 }
 
+/* Image inside goals section */
 #about-page #goals img {
     max-width: 30%; /* Resize image */
-    height: auto;
-    display: block;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Display block for centering */
     margin: 0 auto 20px auto; /* Center image with spacing */
-    margin-top: 1%;
+    margin-top: 1%; /* Add space above the image */
 }
 
-/* Team section */
+
+/* Team section styling */
 #team {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-}
-#team h2{
-    font-size: 2em;
-    color: #07288a ;
+    text-align: center; /* Center align the text */
+    margin-top: 40px; /* Add space above the section */
+    padding: 20px; /* Add padding around the content */
 }
 
+#team h2 {
+    font-size: 2em; /* Set large font size for heading */
+    color: #07288a; /* Dark blue color for heading */
+}
+
+/* Grid layout for team members */
 .team-grid {
     display: grid; /* Use grid layout */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
     gap: 30px; /* Space between team members */
-    justify-content: center;
+    justify-content: center; /* Center the grid */
 }
 
+/* Styling for each team member */
 .team-member {
     background-color: #f9f9f9; /* Light gray background */
     border: 1px solid #ddd; /* Light gray border */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    overflow: hidden;
-    text-align: center; /* Center text */
-    padding: 20px;
+    overflow: hidden; /* Hide overflow content */
+    text-align: center; /* Center align the text */
+    padding: 20px; /* Add padding inside the card */
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
 }
 
@@ -119,30 +125,30 @@
 }
 
 .team-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Circular image */
+    width: 100px; /* Set width of image */
+    height: 100px; /* Set height of image */
+    border-radius: 50%; /* Make image circular */
     object-fit: cover; /* Ensure the image fits well */
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Space below the image */
     border: 3px solid #07288a; /* Dark blue border */
 }
 
 .team-member h3 {
-    font-size: 1.5em;
-    color: #07288a; /* Dark blue heading color */
-    margin-bottom: 10px;
+    font-size: 1.5em; /* Set font size for heading */
+    color: #07288a; /* Dark blue color for heading */
+    margin-bottom: 10px; /* Add space below the heading */
 }
 
 .team-member p {
-    font-size: 1em;
-    color: #555; /* Medium gray text */
+    font-size: 1em; /* Standard paragraph font size */
+    color: #555; /* Medium gray text color */
 }
 
 /* Table styling */
 #about-page table {
     width: 100%; /* Full-width table */
     border-collapse: collapse; /* Remove space between cells */
-    margin: 20px 0;
+    margin: 20px 0; /* Add space above and below the table */
     background-color: #07288a; /* Dark blue background */
     color: white; /* White text */
 }
@@ -154,7 +160,7 @@
 #about-page th, #about-page td {
     padding: 10px; /* Padding inside table cells */
     border: 1px solid white; /* White borders */
-    text-align: center;
+    text-align: center; /* Center align text */
 }
 
 #about-page th {
@@ -166,10 +172,10 @@
     color: #FFCC33; /* Yellow text for data cells */
 }
 
-/* Video styling */
+/* Video section styling */
 #about-page #video {
     text-align: center; /* Center align the video */
-    margin: 30px 0;
+    margin: 30px 0; /* Add space above and below the video */
 }
 
 #about-page #video video {
@@ -180,82 +186,83 @@
 }
 
 #about-page #video p {
-    font-size: 1em;
+    font-size: 1em; /* Standard paragraph font size */
     color: #182e9deb; /* Light blue text */
-    margin-top: 5px;
+    margin-top: 5px; /* Add space above the text */
 }
 
 #about-page #more {
-    font-size: large;
+    font-size: large; /* Large font size for additional info */
 }
+
+/* About map section styling */
 #about-map {
-    background-color: #f9f9f9; /* רקע בהיר */
-    padding: 40px 20px;
-    margin: 30px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הצללה */
-    text-align: center;
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px 20px; /* Add padding */
+    margin: 30px auto; /* Center the section with margin */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center; /* Center align the text */
 }
 
 #about-map h2 {
-    font-size: 2.5em;
-    color: #07288a;
-    margin-bottom: 20px;
+    font-size: 2.5em; /* Large font size for heading */
+    color: #07288a; /* Dark blue color for heading */
+    margin-bottom: 20px; /* Add space below the heading */
 }
 
 #about-map p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 20px;
+    font-size: 1.2em; /* Slightly larger paragraph text */
+    color: #555; /* Medium gray text color */
+    line-height: 1.8; /* Increase spacing between lines */
+    margin-bottom: 20px; /* Add space below the paragraph */
 }
 
 #about-map embed {
-    width: 90%;
-    max-width: 800px;
-    height: 450px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 90%; /* Set embed width */
+    max-width: 800px; /* Maximum width */
+    height: 450px; /* Set embed height */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 #about-map a {
-    color: #FB6F60;
-    font-weight: bold;
-    text-decoration: underline;
+    color: #FB6F60; /* Light red color for links */
+    font-weight: bold; /* Bold text */
+    text-decoration: underline; /* Underline links */
 }
 
 #about-map a:hover {
-    color: #07288a;
+    color: #07288a; /* Change link color on hover */
 }
+
+/* Media query for responsive design */
 @media (max-width: 768px) {
-    /* כותרות ותכנים */
+    /* Smaller titles and text for smaller screens */
     #about-page #title, 
     #goals h2, 
     #team h2, 
     #about-map h2 {
-        font-size: 1.8em; /* גודל כותרת מוקטן */
+        font-size: 1.8em; /* Reduced heading font size */
     }
 
     #about-page #about p,
     #about-map p,
     .team-member p,
     .card p {
-        font-size: 1em; /* טקסט קטן יותר */
+        font-size: 1em; /* Smaller text size */
     }
 
-
-    /* טבלה */
+    /* Adjust table size */
     #about-page table {
-        font-size: 0.8em; /* טקסט קטן יותר בטבלה */
+        font-size: 0.8em; /* Smaller table font size */
     }
 
-    /* וידאו */
+    /* Adjust video and map size */
     #about-page #video video,
     #about-map embed {
-        width: 100%; 
-        height: auto;
+        width: 100%; /* Full width */
+        height: auto; /* Automatic height */
     }
 }
-
-

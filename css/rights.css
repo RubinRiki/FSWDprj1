@@ -1,142 +1,149 @@
-/* כותרת העמוד */
+/* Page Title Section */
 #page-title {
-    text-align: center;
-    padding: 40px 20px;
-    
+    text-align: center; /* Centers the title */
+    padding: 40px 20px; /* Adds padding around the title */
 }
 
 #page-title h1 {
-    font-size: 3em; /* גודל כותרת מוגדל */
-    color: #07288a;
-
+    font-size: 3em; /* Increases the title size */
+    color: #07288a; /* Title color */
 }
 
 #page-title p {
-    font-size: 1.4em; /* מלל מוגדל יותר */
-    line-height: 1.8; /* ריווח שורות מוגדל */
-
+    font-size: 1.4em; /* Increases paragraph font size */
+    line-height: 1.8; /* Increases line height for better readability */
 }
 
+/* Style for the details sections (expandable content) */
 details {
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease; /* מאפשר מעבר חלק */
-    overflow: hidden;
+    padding: 15px; /* Adds padding inside details */
+    border: 1px solid #ccc; /* Adds a border around the details */
+    border-radius: 5px; /* Rounds the corners of the details */
+    background-color: white; /* Background color of the details */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    overflow: hidden; /* Hides overflowing content when collapsed */
 }
 
 details[open] {
-    grid-column: span 2; /* תופס את כל רוחב השורה */
-    padding: 20px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* הצללה מוגדלת */
-    transform: scale(1.02); /* אפקט הגדלה קל */
+    grid-column: span 2; /* Makes the details span across the entire width */
+    padding: 20px; /* Increases padding when expanded */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Darker shadow when expanded */
+    transform: scale(1.02); /* Slightly increases size for effect */
 }
 
+/* Summary (the clickable part of details) */
 summary {
-    font-size: 1.8em; 
-    font-weight: bold;
-    cursor: pointer;
-    padding: 10px;
-    background: #07288a;
-    color: white;
-    border-radius: 5px;
-    transition: background 0.3s ease; /* מעבר חלק בצבע */
+    font-size: 1.8em; /* Increases font size of the summary */
+    font-weight: bold; /* Makes the summary text bold */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    padding: 10px; /* Adds padding inside the summary */
+    background: #07288a; /* Background color of the summary */
+    color: white; /* Text color of the summary */
+    border-radius: 5px; /* Rounds the corners */
+    transition: background 0.3s ease; /* Smooth background color transition */
 }
 
 summary:hover {
-    background: #FB6F60; /* שינוי צבע בלחיצה */
+    background: #FB6F60; /* Changes background color on hover */
 }
 
+/* Paragraph text inside details */
 details p {
-    padding: 15px 0;
-    font-size: 1.1em; 
-    line-height: 1.8; 
-    opacity: 0;
-    transition: opacity 0.3s ease; /* מעבר חלק להופעת הטקסט */
+    padding: 15px 0; /* Adds padding to the paragraph */
+    font-size: 1.1em; /* Increases font size */
+    line-height: 1.8; /* Increases line height for readability */
+    opacity: 0; /* Initially hides the paragraph */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
 
 details[open] p {
-    opacity: 1; /* הטקסט מופיע רק כשהפרטים פתוחים */
+    opacity: 1; /* Shows the paragraph when the details are expanded */
 }
 
+/* Button inside details */
 details a.btn {
-    display: inline-block;
-    background: #07288a;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    display: inline-block; /* Makes the button inline-block */
+    background: #07288a; /* Background color of the button */
+    color: white; /* Button text color */
+    padding: 12px 25px; /* Adds padding inside the button */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 5px; /* Rounds the button corners */
+    font-size: 1.2em; /* Increases font size of the button */
+    opacity: 0; /* Initially hides the button */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
 
 details[open] a.btn {
-    opacity: 1;
+    opacity: 1; /* Shows the button when details are expanded */
 }
 
+/* Grid container for rights content */
 .rights-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 10px;
-    transition: all 0.3s ease; /* מעבר חלק */
+    display: grid; /* Uses grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+    gap: 20px; /* Adds space between grid items */
+    padding: 10px; /* Adds padding around the grid */
+    transition: all 0.3s ease; /* Smooth transition for layout changes */
 }
 
-
+/* Podcast Section */
 .podcast {
-    margin-top: 20px;
-    display: flex;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    align-items: center;
+    margin-top: 20px; /* Adds margin on top */
+    display: flex; /* Uses flexbox layout */
+    background-color: #f9f9f9; /* Light background for the podcast section */
+    padding: 20px; /* Adds padding inside the podcast section */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
 }
 
 .podcast iframe {
-    width: 550pX;
-    height: 300px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    flex: 1;
+    width: 550px; /* Sets a fixed width for the iframe */
+    height: 300px; /* Sets a fixed height for the iframe */
+    border-radius: 10px; /* Rounds the corners of the iframe */
+    margin-bottom: 20px; /* Adds space at the bottom of the iframe */
+    flex: 1; /* Allows the iframe to flex */
 }
 
 .podcast h2 {
-    font-size: 2em;
-    color: #07288a;
-    line-height: 1.6;
-    flex: 2;
-    margin-left: 50px;
+    font-size: 2em; /* Increases font size of the heading */
+    color: #07288a; /* Text color of the heading */
+    line-height: 1.6; /* Increases line height for better readability */
+    flex: 2; /* Allows the heading to take up more space */
+    margin-left: 50px; /* Adds margin on the left side */
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
     .rights-container {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(1, 1fr); /* Switch to a single column layout */
     }
-   
+
     #page-title p {
-        font-size: 1em ;
+        font-size: 1em; /* Reduces font size of the paragraph */
     }
 
     details a.btn {
-    font-size: 1.1em; 
+        font-size: 1.1em; /* Reduces font size of the button */
     }
+
     details p {
-    font-size: 1em; 
+        font-size: 1em; /* Reduces font size of the paragraph inside details */
     }
-    .podcast{
-        flex-direction: column;
+
+    .podcast {
+        flex-direction: column; /* Stacks the podcast content vertically */
     }
-    .podcast h2{
-      font-size: 1.5em;
+
+    .podcast h2 {
+        font-size: 1.5em; /* Reduces font size of the heading */
     }
-    .podcast iframe{
-        width: 100%;
-        height: 100% ;
-        margin-top: 20px;
+
+    .podcast iframe {
+        width: 100%; /* Makes the iframe width responsive */
+        height: 100%; /* Makes the iframe height responsive */
+        margin-top: 20px; /* Adds margin on top */
     }
 }

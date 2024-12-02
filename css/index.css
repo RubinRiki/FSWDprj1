@@ -347,10 +347,7 @@
     }
 
     .hero-image {
-        max-width: 70%; /* גודל מותאם לתמונה */
-        margin : 20px;
-        transform: scaleX(1.5);
-        justify-self: center;
+        display: none;
     }
 
     /* Summaries Section */

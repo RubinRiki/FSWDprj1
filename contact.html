@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Main stylesheet -->
+    <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Contact page specific stylesheet -->
+    <!-- Link to contact page-specific stylesheet -->
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    <!-- Header navigation -->
+    <!-- Header navigation section -->
     <header>
         <nav>
+            <!-- Navigation links to different pages -->
             <a href="index.html">ראשי</a>
             <a href="about.html">מי אנחנו?</a>
             <a href="scholarships.html">מלגות</a>
@@ -20,45 +21,54 @@
             <a href="contact.html">צור קשר</a>
         </nav>
     </header>
-    <!-- Main content -->
+    
+    <!-- Main content section for the contact page -->
     <main id="contact-page">
         <section class="contact-section">
             <h1>צור קשר</h1>
             <form action="#" method="POST">
-                <!-- Full name input -->
+                <!-- Input field for the full name -->
                 <label for="name">שם מלא:</label>
                 <input type="text" id="name" name="name" placeholder="הכנס את שמך כאן" required>
         
-                <!-- Email input -->
+                <!-- Input field for email address -->
                 <label for="email">אימייל:</label>
                 <input type="email" id="email" name="email" placeholder="הכנס את כתובת המייל שלך" required>
         
-                <!-- Message textarea -->
+                <!-- Textarea for writing a message -->
                 <label for="message">הודעה:</label>
                 <textarea id="message" name="message" placeholder="כתוב את ההודעה שלך כאן" required></textarea>
         
-                <!-- Submit button -->
+                <!-- Submit button for sending the form -->
                 <button type="submit">שלח הודעה</button>
             </form>
+            <!-- Small text for additional information -->
             <small>אנחנו נעשה מאמצים לחזור אליך בהקדם האפשרי</small>
         </section>
     </main>
+
+    <!-- Footer section -->
     <footer>
         <p>&copy; עמותת סטודנט למען סטודנט. כל הזכויות שמורות 2024</p>
         <div class="footer-container">
+            <!-- Section for social media icons -->
             <div class="footer-section">
                 <h3>ברשתות</h3>
                 <div class="social-icons">
+                    <!-- Social media links with icons -->
                     <a href="#"><img src="media/images/facebook_5968764.png" alt="Facebook"></a>
                     <a href="#"><img src="media/images/linkedin_3536505.png" alt="Twitter"></a>
                     <a href="#"><img src="media/images/linkedin_3536505.png" alt="LinkedIn"></a>
                     <a href="#"><img src="media/images/instagram_2111463.png" alt="Instagram"></a>
                 </div>
             </div>
+
+            <!-- Section for important links -->
             <div class="footer-section">
                 <h3>קישורים חשובים</h3>
                 <nav>
                     <ul>
+                        <!-- List of important navigation links -->
                         <li><a href="index.html">ראשי</a></li>
                         <li><a href="about.html">מי אנחנו?</a></li>
                         <li><a href="scholarships.html">מלגות</a></li>
@@ -67,15 +77,18 @@
                     </ul>
                 </nav>
             </div>
+
+            <!-- Section for email subscription -->
             <div class="footer-section">
                 <h3>עדכונים</h3>
                 <span>הרשם לקבלת עדכונים במייל</span>
                 <div>
-                <form action="#">
-                    <input  type="email" placeholder="אימייל">
-                    <button type="submit">שליחה</button>
-                </form>
-            </div>
+                    <form action="#">
+                        <!-- Input for entering email for updates -->
+                        <input type="email" placeholder="אימייל">
+                        <button type="submit">שליחה</button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>

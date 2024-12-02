@@ -1,86 +1,86 @@
 /* Styling for the contact form section */
 .contact-section {
-    padding: 20px 20px;
+    padding: 20px 20px; /* Inner padding for spacing */
     background: linear-gradient(135deg, #FF7A7A, #FFB347); /* Gradient background for a vibrant look */
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    max-width: 800px;
-    margin: 50px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow effect */
+    border-radius: 15px; /* Rounded corners for a softer appearance */
+    color: white; /* Text color set to white */
+    text-align: center; /* Center align the text */
+    max-width: 800px; /* Limit the width of the section */
+    margin: 50px auto; /* Center the section horizontally and add vertical spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow effect for depth */
 }
 
 /* Styling for the main heading */
 .contact-section h1 {
-    font-size: 2.5em;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Text shadow for emphasis */
+    font-size: 2.5em; /* Large font size for the heading */
+    color: white; /* Heading text color set to white */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: bold; /* Bold font for emphasis */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Shadow for a subtle 3D effect */
 }
 
 /* Styling for form labels */
 .contact-section label {
-    display: block;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #07288a;
-    font-weight: bold;
+    display: block; /* Each label on its own line */
+    font-size: 1.2em; /* Larger font size for labels */
+    margin-bottom: 10px; /* Space below each label */
+    color: #07288a; /* Dark blue color for label text */
+    font-weight: bold; /* Bold font for better readability */
 }
 
 /* Styling for text inputs and textarea fields */
 .contact-section input,
 .contact-section textarea {
-    width: 90%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1em;
+    width: 90%; /* Set input width to 90% of the parent */
+    padding: 15px; /* Inner padding for text fields */
+    margin-bottom: 20px; /* Space below each field */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1em; /* Standard font size */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
-    transition: transform 0.3s, box-shadow 0.3s;
-    outline: none;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+    outline: none; /* Remove the default outline */
 }
 
 /* Focus effects for inputs and textarea */
 .contact-section input:focus,
 .contact-section textarea:focus {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow on focus */
-    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Darker shadow on focus */
+    transform: scale(1.02); /* Slight zoom effect on focus */
 }
 
 /* Additional styling for textarea */
 .contact-section textarea {
-    resize: none;
-    min-height: 150px;
-    font-size: 18px;
+    resize: none; /* Disable resizing */
+    min-height: 150px; /* Minimum height for the textarea */
+    font-size: 18px; /* Larger font size for easier reading */
 }
 
 /* Styling for the submit button */
 .contact-section button {
-    background-color: #07288a;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.3s;
+    background-color: #07288a; /* Dark blue background */
+    color: white; /* White text color */
+    padding: 15px 30px; /* Padding for the button */
+    font-size: 1.2em; /* Larger font size for the button text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor for hover effect */
+    transition: transform 0.2s, background-color 0.3s; /* Smooth transitions */
 }
 
 /* Hover effect for the submit button */
 .contact-section button:hover {
-    background-color: #FB6F60;
-    transform: scale(1.05);
+    background-color: #FB6F60; /* Change background color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Active effect for the submit button */
 .contact-section button:active {
-    transform: scale(0.98);
+    transform: scale(0.98); /* Slight shrink effect when pressed */
 }
 
 /* Styling for the small informational text below the form */
 .contact-section small {
-    font-size: 0.9em;
-    color: #f9f9f9;
+    font-size: 0.9em; /* Smaller font size for additional info */
+    color: #f9f9f9; /* Light gray color for the text */
 }

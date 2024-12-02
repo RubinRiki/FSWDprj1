@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>אודות העמותה</title> 
+    <!-- Linking external CSS files and Google Font -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/about.css">
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
@@ -24,13 +25,14 @@
     <main>
         <!-- Page title section -->
         <section id="title">
-        <h1>על העמותה שלנו</h1>
-       </section>
+            <h1>על העמותה שלנו</h1>
+        </section>
        
         <!-- Introduction section -->
         <section id="about">
             <h2>מי אנחנו?</h2>
             <ul>
+                <!-- Organization's purpose and mission -->
                 <li>עמותת "סטודנט למען סטודנט" נוסדה בשנת 2010 במטרה להעניק תמיכה לסטודנטים ברחבי הארץ.</li>
                 <li>מאז הקמתה, העמותה עזרה לאלפי סטודנטים לשפר את הישגיהם האקדמיים ולממש את הפוטנציאל שלהם.</li>
                 <li> אנו מאמינים כי השכלה גבוהה היא כלי מרכזי ליצירת שוויון הזדמנויות</li>
@@ -41,6 +43,7 @@
         <section id="goals">
             <h2>המטרות שלנו</h2>
             <div class="mission-cards">
+                <!-- Individual goals represented as cards -->
                 <div class="card">
                     <h3>מלגות לסטודנטים</h3>
                     <p>מתן מלגות לסטודנטים נזקקים כדי להקל על הנטל הכלכלי.</p>
@@ -64,6 +67,7 @@
         <section id="team">
             <h2>הצוות שלנו</h2>
             <div class="team-grid">
+                <!-- Team member details -->
                 <div class="team-member">
                     <img src="media/images/yaelCohen.png" alt="תמונה של ד"ר יעל כהן">
                     <h3>ד"ר יעל כהן</h3>
@@ -84,54 +88,57 @@
 
         <!-- Achievements table -->
         <section id="Achievements">
-         <h2>הישגי העמותה בשנים 2023 -2020</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>שנה</th>
-                    <th>מספר הסטודנטים שנעזרו</th>
-                    <th>מלגות שחולקו (₪)</th>
-                    <th>מספר תכניות מנטורינג</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2020</td>
-                    <td>1,200</td>
-                    <td>2,400,000</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>2021</td>
-                    <td>1,500</td>
-                    <td>3,000,000</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>2,000</td>
-                    <td>4,500,000</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td>2023</td>
-                    <td>2,500</td>
-                    <td>5,000,000</td>
-                    <td>30</td>
-                </tr>
-            </tbody>
-        </table>
+            <h2>הישגי העמותה בשנים 2023 -2020</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>שנה</th>
+                        <th>מספר הסטודנטים שנעזרו</th>
+                        <th>מלגות שחולקו (₪)</th>
+                        <th>מספר תכניות מנטורינג</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Achievements for each year -->
+                    <tr>
+                        <td>2020</td>
+                        <td>1,200</td>
+                        <td>2,400,000</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>1,500</td>
+                        <td>3,000,000</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>2,000</td>
+                        <td>4,500,000</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>2,500</td>
+                        <td>5,000,000</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Map section -->
         <section id="about-map">
             <div class="map-container">
                 <h2>היכן אנחנו פועלים</h2>
                 <p>עמותת סטודנט למען סטודנט פעילה במגוון מיקומים ברחבי הארץ. צפו במפה כדי לראות את המקומות שבהם אנחנו משפיעים.</p>
-                <embed src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1901.6352516192399!2d34.82174595943038!3d31.876713611010846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1siw!2sil!4v1733083910851!5m2!1siw!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></embed>
+                <embed src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></embed>
                 <p>מעוניינים בפרטים נוספים? <a href="contact.html">צרו קשר</a>.</p>
             </div>
         </section>
         
-        
-        <!-- Footer -->
+        <!-- Footer section -->
         <footer>
             <p>&copy; עמותת סטודנט למען סטודנט. כל הזכויות שמורות 2024</p>
             <div class="footer-container">
@@ -139,7 +146,6 @@
                     <h3>ברשתות</h3>
                     <div class="social-icons">
                         <a href="#"><img src="media/images/facebook_5968764.png" alt="Facebook"></a>
-                        <a href="#"><img src="media/images/linkedin_3536505.png" alt="Twitter"></a>
                         <a href="#"><img src="media/images/linkedin_3536505.png" alt="LinkedIn"></a>
                         <a href="#"><img src="media/images/instagram_2111463.png" alt="Instagram"></a>
                     </div>
@@ -160,13 +166,13 @@
                     <h3>עדכונים</h3>
                     <span>הרשם לקבלת עדכונים במייל</span>
                     <div>
-                    <form action="#">
-                        <input type="email" placeholder="אימייל">
-                        <button type="submit">שליחה</button>
-                    </form>
-                </div>
+                        <form action="#">
+                            <input type="email" placeholder="אימייל">
+                            <button type="submit">שליחה</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </footer>
-        </body>
+    </body>
 </html>
