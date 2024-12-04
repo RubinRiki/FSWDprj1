@@ -179,7 +179,6 @@
 
 .summary-button .btn {
     color: #fff; /* White text for the button */
-    background: none; /* No background */
     border: 2px solid #fff; /* White border */
     padding: 10px 20px; /* Padding inside the button */
     border-radius: 5px; /* Rounded corners */
@@ -188,11 +187,6 @@
     transition: background 0.3s, color 0.3s; /* Smooth transition on hover */
 }
 
-/* Hover effect for the summary */
-.summary:hover {
-    background-color: #e0e0e0; /* Light gray background on hover */
-    transition: background-color 0.5s ease; /* Smooth transition */
-}
 
 .summary:hover .btn {
     background-color: #07288a; /* Dark blue background for button */

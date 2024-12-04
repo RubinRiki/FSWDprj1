@@ -77,15 +77,6 @@
     line-height: 1.6; /* Line spacing for readability */
 }
 
-/* Image inside goals section */
-#about-page #goals img {
-    max-width: 30%; /* Resize image */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Display block for centering */
-    margin: 0 auto 20px auto; /* Center image with spacing */
-    margin-top: 1%; /* Add space above the image */
-}
-
 
 /* Team section styling */
 #team {
